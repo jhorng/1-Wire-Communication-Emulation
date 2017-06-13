@@ -18,3 +18,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-06-13 12:37:47.003
 !MESSAGE Indexed 'Temperature Sensor' (17 sources, 66 headers) in 2.19 sec: 6,038 declarations; 18,019 references; 3 unresolved inclusions; 119 syntax errors; 3,154 unresolved names (12%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-06-13 14:00:10.386
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-06-13 14:00:10.386
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

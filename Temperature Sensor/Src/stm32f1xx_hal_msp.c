@@ -98,7 +98,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
     */
     GPIO_InitStruct.Pin = Temperature_Sensor_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(Temperature_Sensor_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN USART1_MspInit 1 */

@@ -50,6 +50,9 @@
 #define Temperature_Sensor_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
+#define Reset (uint8_t)0x0
+#define Presence (uint8_t)0x0
+
 #define Normal (uint8_t)0xF0
 #define Alarm (uint8_t)0xEC
 /* USER CODE END Private defines */
