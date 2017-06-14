@@ -70,8 +70,8 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   //uint8_t Reset_Command, Presence_Pulse, Search_Command;
-  uint8_t data = 0x69;
-  uint16_t size = 0x00FF;
+  uint8_t txData = 0x59, rxData;
+  uint16_t size = 0x0008;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -105,7 +105,9 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  HAL_UART_Transmit(&huart1, &data, size, 1000);
+	  HAL_UART_Transmit(&huart1, &txData, size, 0);
+	  //HAL_UART_Receive(&huart1, &rxData, size, 0);
+
   }
   /* USER CODE END 3 */
 
@@ -164,9 +166,9 @@ static void MX_USART1_UART_Init(void)
 {
 
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 57600;
+  huart1.Init.BaudRate = 115200;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_2;
+  huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
   huart1.Init.Mode = UART_MODE_TX_RX;
   huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;

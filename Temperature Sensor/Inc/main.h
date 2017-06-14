@@ -46,8 +46,8 @@
 
 /* Private define ------------------------------------------------------------*/
 
-#define Temperature_Sensor_Pin GPIO_PIN_9
-#define Temperature_Sensor_GPIO_Port GPIOA
+#define UART_TX_Pin GPIO_PIN_9
+#define UART_TX_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 #define Reset (uint8_t)0x0
