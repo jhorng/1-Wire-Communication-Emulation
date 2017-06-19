@@ -58,7 +58,8 @@ static void MX_USART1_UART_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-
+void masterWriteSlot(uint8_t slot);
+uint8_t masterReadSlot(uint8_t rxData);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -70,8 +71,8 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   //uint8_t Reset_Command, Presence_Pulse, Search_Command;
-  uint8_t txData = 0x59, rxData;
-  uint16_t size = 0x0008;
+  uint8_t data;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -105,8 +106,10 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  HAL_UART_Transmit(&huart1, &txData, size, 0);
+	  //HAL_UART_Transmit(&huart1, &txData, size, 0);
 	  //HAL_UART_Receive(&huart1, &rxData, size, 0);
+	  //masterWriteSlot(SLOT1);
+	  data = masterReadSlot(data);
 
   }
   /* USER CODE END 3 */
@@ -197,7 +200,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void masterWriteSlot(uint8_t slot){
+	static uint16_t size = 0x00FF;
 
+	HAL_UART_Transmit(&huart1, &slot, size, 0);
+}
+
+uint8_t masterReadSlot(uint8_t rxData){
+	static uint16_t size = 0x00FF;
+
+	HAL_UART_Receive(&huart1, &rxData, size, 0);
+	return rxData;
+}
 /* USER CODE END 4 */
 
 /**
