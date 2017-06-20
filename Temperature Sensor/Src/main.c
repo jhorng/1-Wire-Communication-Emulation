@@ -58,8 +58,9 @@ static void MX_USART1_UART_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-void masterWriteSlot(uint8_t slot);
-uint8_t masterReadSlot(uint8_t rxData);
+void masterWriteByte(uint8_t byte);
+void oneWireReset();
+void searchCommand();
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -71,7 +72,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   //uint8_t Reset_Command, Presence_Pulse, Search_Command;
-  uint8_t data;
 
   /* USER CODE END 1 */
 
@@ -96,7 +96,8 @@ int main(void)
   MX_USART1_UART_Init();
 
   /* USER CODE BEGIN 2 */
-
+  oneWireReset();
+  searchCommand();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,9 +109,9 @@ int main(void)
   /* USER CODE BEGIN 3 */
 	  //HAL_UART_Transmit(&huart1, &txData, size, 0);
 	  //HAL_UART_Receive(&huart1, &rxData, size, 0);
-	  //masterWriteSlot(SLOT1);
-	  data = masterReadSlot(data);
-
+	  //masterWriteByte(BYTE1);
+	  //oneWireReset();
+	  //searchCommand();
   }
   /* USER CODE END 3 */
 
@@ -169,7 +170,7 @@ static void MX_USART1_UART_Init(void)
 {
 
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 18000;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -200,17 +201,30 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void masterWriteSlot(uint8_t slot){
+void masterWriteByte(uint8_t byte){
 	static uint16_t size = 0x00FF;
 
-	HAL_UART_Transmit(&huart1, &slot, size, 0);
+	HAL_UART_Transmit(&huart1, &byte, size, 0);
 }
 
-uint8_t masterReadSlot(uint8_t rxData){
+void oneWireReset(){
+	static uint8_t reset = 0x0;
 	static uint16_t size = 0x00FF;
 
-	HAL_UART_Receive(&huart1, &rxData, size, 0);
-	return rxData;
+	HAL_UART_Transmit(&huart1, &reset, size, 0);
+}
+
+void searchCommand(){
+	int i;
+
+	for(i=0; i<9; i++){
+		if(i<5){
+			masterWriteByte(BYTE0);
+		}
+		else{
+			masterWriteByte(BYTE1);
+		}
+	}
 }
 /* USER CODE END 4 */
 

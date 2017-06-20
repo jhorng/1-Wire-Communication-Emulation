@@ -50,8 +50,8 @@
 #define UART_TX_RX_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
-#define SLOT0 (uint8_t)0x0
-#define SLOT1 (uint8_t)0x7F
+#define BYTE0 (uint8_t)0x0
+#define BYTE1 (uint8_t)0x7F
 
 #define Reset (uint8_t)0x0
 #define Presence (uint8_t)0x0

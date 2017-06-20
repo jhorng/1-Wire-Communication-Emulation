@@ -1,0 +1,13 @@
+/*
+ * reset.c
+ *
+ *  Created on: Jun 20, 2017
+ *      Author: Chu Jaan Horng
+ */
+
+#include "main.h"
+#include "stm32f1xx_hal.h"
+
+void oneWireReset(){
+
+}
