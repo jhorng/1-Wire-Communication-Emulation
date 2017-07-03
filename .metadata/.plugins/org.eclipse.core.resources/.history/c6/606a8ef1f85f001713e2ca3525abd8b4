@@ -1,0 +1,13 @@
+/*
+ * function.h
+ *
+ *  Created on: Jul 3, 2017
+ *      Author: Prince
+ */
+
+#ifndef FUNCTION_H
+#define FUNCTION_H
+
+void masterWriteByte(uint8_t byte);
+
+#endif /* FUNCTION_H */
