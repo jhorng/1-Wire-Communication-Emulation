@@ -51,13 +51,8 @@
 
 /* USER CODE BEGIN Private defines */
 #define BYTE0 (uint8_t)0x0
-#define BYTE1 (uint8_t)0x7F
+#define BYTE1 (uint8_t)0xFF
 
-#define Reset (uint8_t)0x0
-#define Presence (uint8_t)0x0
-
-#define Normal (uint8_t)0xF0
-#define Alarm (uint8_t)0xEC
 /* USER CODE END Private defines */
 
 void _Error_Handler(char *, int);

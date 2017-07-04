@@ -1,0 +1,49 @@
+/*
+ * function.c
+ *
+ *  Created on: Jul 3, 2017
+ *      Author: Prince
+ */
+#include <stdlib.h>
+#include "stm32f1xx_hal.h"
+#include "function.h"
+
+//extern UART_HandleTypeDef huart1;
+
+void masterWriteByteWithInterrupt(uint8_t byte){
+	static uint16_t size = 0x00FF;
+
+	//HAL_UART_Transmit_IT(&huart1, &byte, size);
+}
+
+void oneWireReset(UART_HandleTypeDef huart1){
+	uint8_t reset = 0x00;
+
+	huart1.Instance->BRR = 4000;
+
+	HAL_UART_Transmit(&huart1, &reset, sizeof(reset)+7, 0);
+}
+
+void searchCommand(){
+	int i;
+
+	for(i=0; i<9; i++){
+		if(i<5){
+			masterWriteByte(BYTE0);
+		}
+		else{
+			masterWriteByte(BYTE1);
+		}
+	}
+}
+
+void readCommand(){
+	masterWriteByteWithInterrupt(BYTE1);
+	masterWriteByteWithInterrupt(BYTE1);
+	masterWriteByteWithInterrupt(BYTE0);
+	masterWriteByteWithInterrupt(BYTE0);
+	masterWriteByteWithInterrupt(BYTE1);
+	masterWriteByteWithInterrupt(BYTE1);
+	masterWriteByteWithInterrupt(BYTE0);
+	masterWriteByteWithInterrupt(BYTE0);
+}

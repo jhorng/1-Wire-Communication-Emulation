@@ -8,8 +8,10 @@
 #ifndef FUNCTION_H
 #define FUNCTION_H
 
-void masterWriteByte(uint8_t byte);
-void masterWriteByteWithInterrupt(uint8_t byte);
+#define BYTE0 (uint8_t)0x0
+#define BYTE1 (uint8_t)0xFF
+
+void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
 void oneWireReset();
 void searchCommand();
 void readCommand();

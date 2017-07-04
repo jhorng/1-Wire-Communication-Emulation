@@ -10,25 +10,25 @@
 
 UART_HandleTypeDef huart1;
 
-void masterWriteByte(uint8_t byte){
-	static uint16_t size = 0x00FF;
+void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+	if(byte == 0x0){  // pointer problem
+		huart1.Instance->BRR = 480;
+	}
+	else{
+		huart1.Instance->BRR = 180;
+	}
 
-	HAL_UART_Transmit(&huart1, &byte, size, 0);
-}
-
-void masterWriteByteWithInterrupt(uint8_t byte){
-	static uint16_t size = 0x00FF;
-
-	HAL_UART_Transmit_IT(&huart1, &byte, size);
+	HAL_UART_Transmit_IT(&huart1, byte, dataSize);
 }
 
 void oneWireReset(){
-	static uint8_t reset = 0x0;
-	static uint16_t size = 0x00FF;
+	uint8_t reset = 0x00;
 
-	HAL_UART_Transmit(&huart1, &reset, size, 0);
+	huart1.Instance->BRR = 4000;
+
+	HAL_UART_Transmit(&huart1, &reset, sizeof(reset), 0);
 }
-
+/*
 void searchCommand(){
 	int i;
 
@@ -40,15 +40,16 @@ void searchCommand(){
 			masterWriteByte(BYTE1);
 		}
 	}
-}
+}*/
 
+/*
+ * @brief	This function is to send a data (33h) to the
+ * 			sensor to obtain the registration number of the
+ * 			sensor, if and only if one device is connected
+ * 			to the master. Otherwise, error will occur.
+ */
 void readCommand(){
-	masterWriteByteWithInterrupt(BYTE1);
-	masterWriteByteWithInterrupt(BYTE1);
-	masterWriteByteWithInterrupt(BYTE0);
-	masterWriteByteWithInterrupt(BYTE0);
-	masterWriteByteWithInterrupt(BYTE1);
-	masterWriteByteWithInterrupt(BYTE1);
-	masterWriteByteWithInterrupt(BYTE0);
-	masterWriteByteWithInterrupt(BYTE0);
+	uint8_t txData[] = {BYTE0, BYTE0, BYTE1, BYTE1, BYTE0, BYTE0, BYTE1, BYTE1};
+
+	masterWriteByteWithInterrupt(txData, sizeof(txData));
 }
