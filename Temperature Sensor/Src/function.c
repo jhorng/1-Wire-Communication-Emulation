@@ -11,14 +11,32 @@
 UART_HandleTypeDef huart1;
 
 void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+	if(*byte == BYTE0){
+		huart1.Instance->BRR = 480;
+	}
+	else if(*byte == BYTE1){
+		huart1.Instance->BRR = 432;
+	}
+	else{
+		huart1.Instance->BRR = 625;
+	}
+
+	HAL_UART_Transmit_IT(&huart1, byte, dataSize);
+}
+/*
+void masterReadByteWithInterrupt(uint8_t *byte, int dataSize){
 	if(*byte == 0x0){
 		huart1.Instance->BRR = 480;
 	}
-	else{
+	else if(*byte == BYTE1){
 		huart1.Instance->BRR = 72;
 	}
-	HAL_UART_Transmit_IT(&huart1, byte, dataSize);
-}
+	else{
+		huart1.Instance->BRR = 625;
+	}
+
+	HAL_UART_Receive_IT(&huart1, byte, dataSize);
+}*/
 
 void oneWireReset(){
 	uint8_t reset = 0x00;
@@ -27,19 +45,26 @@ void oneWireReset(){
 
 	HAL_UART_Transmit(&huart1, &reset, sizeof(reset), 0);
 }
-/*
-void searchCommand(){
-	int i;
 
-	for(i=0; i<9; i++){
-		if(i<5){
-			masterWriteByte(BYTE0);
-		}
-		else{
-			masterWriteByte(BYTE1);
-		}
-	}
-}*/
+void searchCommand(){
+	uint8_t bit0 = BYTE0;
+	uint8_t bit1 = BYTE0;
+	uint8_t bit2 = BYTE0;
+	uint8_t bit3 = BYTE0;
+	uint8_t bit4 = BYTE1;
+	uint8_t bit5 = BYTE1;
+	uint8_t bit6 = BYTE1;
+	uint8_t bit7 = BYTE1;
+
+	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
+	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
+	masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
+	masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
+	masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
+	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
+	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
+	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+}
 
 /*
  * @brief	This function is to send a data (33h) to the
@@ -57,7 +82,6 @@ void readCommand(){
 	uint8_t bit5 = BYTE1;
 	uint8_t bit6 = BYTE0;
 	uint8_t bit7 = BYTE0;
-	uint8_t rxData = 0;		// haven't tested yet
 
 	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
 	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
@@ -67,5 +91,4 @@ void readCommand(){
 	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
 	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
 	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
-	HAL_UART_Receive_IT(&huart1, &rxData, sizeof(rxData));		// haven't tested yet
 }

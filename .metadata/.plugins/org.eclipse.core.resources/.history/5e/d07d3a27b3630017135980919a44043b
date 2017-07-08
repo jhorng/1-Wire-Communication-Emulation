@@ -1,0 +1,33 @@
+/*
+ * state_machine.c
+ *
+ *  Created on: Jul 3, 2017
+ *      Author: Prince
+ */
+#include <stdlib.h>
+#include "stm32f1xx_hal.h"
+#include "state_machine.h"
+#include "function.h"
+
+UART_HandleTypeDef huart1;
+
+int fsm(State state){
+	uint8_t	rxData;
+	switch(state){
+	case INIT:
+		oneWireReset();
+		state = SEARCH;
+		break;
+	case SEARCH:
+		readCommand();
+		state = RECEIVE;
+		break;
+	case RECEIVE:
+		HAL_UART_Receive_IT(&huart1, &rxData, 8);
+		break;
+	default:
+		state = INIT;
+	}
+	return state;
+}
+

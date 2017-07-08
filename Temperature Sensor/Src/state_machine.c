@@ -9,7 +9,7 @@
 #include "state_machine.h"
 #include "function.h"
 
-//UART_HandleTypeDef huart1;
+UART_HandleTypeDef huart1;
 
 int fsm(State state){
 	switch(state){
@@ -18,8 +18,8 @@ int fsm(State state){
 		state = SEARCH;
 		break;
 	case SEARCH:
-		readCommand();
-		state = SEARCH;
+		searchCommand();
+		//readCommand();
 		break;
 	default:
 		state = INIT;
