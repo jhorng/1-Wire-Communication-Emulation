@@ -73,3 +73,1244 @@ arm-none-eabi-size "Temperature Sensor.elf"
    text	   data	    bss	    dec	    hex	filename
    6140	     12	   1636	   7788	   1e6c	Temperature Sensor.elf
  
+12:38:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6140	     12	   1636	   7788	   1e6c	Temperature Sensor.elf
+ 
+12:53:18 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+13:09:26 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6140	     12	   1636	   7788	   1e6c	Temperature Sensor.elf
+ 
+13:11:44 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+13:29:24 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:62:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit0, sizeof(bit0));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:63:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit1, sizeof(bit1));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:64:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit2, sizeof(bit2));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:65:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit3, sizeof(bit3));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:66:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit4, sizeof(bit4));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:67:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit5, sizeof(bit5));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:68:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit6, sizeof(bit6));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+../Src/function.c:69:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(bit7, sizeof(bit7));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
+      ^
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6168	     12	   1636	   7816	   1e88	Temperature Sensor.elf
+ 
+13:29:50 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6224	     12	   1636	   7872	   1ec0	Temperature Sensor.elf
+ 
+13:30:07 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+13:33:45 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6224	     12	   1636	   7872	   1ec0	Temperature Sensor.elf
+ 
+13:33:48 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+13:49:50 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6224	     12	   1636	   7872	   1ec0	Temperature Sensor.elf
+ 
+13:51:33 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: warning: passing argument 1 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'uint64_t {aka long long unsigned int}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:30: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(rxData, sizeof(rxData));
+                              ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned int'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:2: error: too few arguments to function 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(rxData, sizeof(rxData));
+  ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: declared here
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:52:12 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: error: incompatible type for argument 1 of 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef {aka struct <anonymous>}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:30: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                              ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint64_t {aka long long unsigned int}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:52:46 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: error: incompatible type for argument 1 of 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef {aka struct <anonymous>}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:30: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                              ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:52:53 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: error: incompatible type for argument 1 of 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef {aka struct <anonymous>}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:30: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                              ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:52:54 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: error: incompatible type for argument 1 of 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef {aka struct <anonymous>}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:30: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                              ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:52:55 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: error: incompatible type for argument 1 of 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef {aka struct <anonymous>}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c:71:30: warning: passing argument 2 of 'HAL_UART_Receive_IT' makes pointer from integer without a cast [-Wint-conversion]
+  HAL_UART_Receive_IT(huart1, rxData, sizeof(rxData));
+                              ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:53:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'readCommand':
+../Src/function.c:71:22: error: incompatible type for argument 1 of 'HAL_UART_Receive_IT'
+  HAL_UART_Receive_IT(huart1, &rxData, sizeof(rxData));
+                      ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:689:19: note: expected 'UART_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'UART_HandleTypeDef {aka struct <anonymous>}'
+ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+make: *** [Src/function.o] Error 1
+13:54:30 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6372	     12	   1636	   8020	   1f54	Temperature Sensor.elf
+ 
+13:54:33 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+13:57:38 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6372	     12	   1636	   8020	   1f54	Temperature Sensor.elf
+ 
+14:16:49 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+In file included from ../Src/main.c:44:0:
+../Src/main.c: In function 'main':
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/function.h:12:15: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes pointer from integer without a cast [-Wint-conversion]
+ #define BYTE1 (uint8_t)0xFF
+               ^
+../Src/main.c:109:33: note: in expansion of macro 'BYTE1'
+    masterWriteByteWithInterrupt(BYTE1, 1);
+                                 ^
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/function.h:14:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
+      ^
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6384	     12	   1636	   8032	   1f60	Temperature Sensor.elf
+ 
+14:16:59 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:109:33: error: lvalue required as unary '&' operand
+    masterWriteByteWithInterrupt(&BYTE1, 1);
+                                 ^
+make: *** [Src/main.o] Error 1
+14:17:27 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:17:31 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:19:29 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+In file included from ../Src/function.c:9:0:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/function.h:12:0: warning: "BYTE1" redefined
+ #define BYTE1 (uint8_t)0xFF
+ ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:43:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/main.h:54:0: note: this is the location of the previous definition
+ #define BYTE1 (uint8_t)0x7F
+ ^
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+In file included from ../Src/main.c:44:0:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/function.h:12:0: warning: "BYTE1" redefined
+ #define BYTE1 (uint8_t)0xFF
+ ^
+In file included from ../Src/main.c:39:0:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/main.h:54:0: note: this is the location of the previous definition
+ #define BYTE1 (uint8_t)0x7F
+ ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+In file included from ../Src/state_machine.c:10:0:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/function.h:12:0: warning: "BYTE1" redefined
+ #define BYTE1 (uint8_t)0xFF
+ ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:43:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/state_machine.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/main.h:54:0: note: this is the location of the previous definition
+ #define BYTE1 (uint8_t)0x7F
+ ^
+Finished building: ../Src/state_machine.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:20:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:20:29 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:24:08 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:24:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:26:57 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:27:00 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:38:41 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:38:43 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:43:25 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:43:28 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:43:30 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:44:36 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:44:42 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:44:55 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:45:21 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:45:23 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:52:41 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:52:44 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:54:24 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:54:27 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:55:58 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+14:56:01 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:56:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:56:55 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6376	     12	   1636	   8024	   1f58	Temperature Sensor.elf
+ 
+14:56:57 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+14:59:09 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6376	     12	   1636	   8024	   1f58	Temperature Sensor.elf
+ 
+14:59:12 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:12:56 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c:13:6: error: conflicting types for 'masterWriteByteWithInterrupt'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+In file included from ../Src/function.c:9:0:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/function.h:14:6: note: previous declaration of 'masterWriteByteWithInterrupt' was here
+ void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
+      ^
+../Src/function.c: In function 'masterWriteByteWithInterrupt':
+../Src/function.c:15:5: error: invalid type argument of unary '*' (have 'int')
+  if(*byte == 0x0){  // pointer problem
+     ^
+../Src/function.c:21:32: warning: passing argument 2 of 'HAL_UART_Transmit_IT' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  HAL_UART_Transmit_IT(&huart1, &data, dataSize);
+                                ^
+In file included from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc/stm32f1xx_hal_conf.h:301:0,
+                 from C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+                 from ../Src/function.c:8:
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:688:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'const uint8_t * {aka const unsigned char *}'
+ HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+                   ^
+../Src/function.c: In function 'readCommand':
+../Src/function.c:63:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:64:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:65:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:66:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:67:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:68:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:69:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+../Src/function.c:70:31: warning: passing argument 1 of 'masterWriteByteWithInterrupt' makes integer from pointer without a cast [-Wint-conversion]
+  masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+                               ^
+../Src/function.c:13:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void masterWriteByteWithInterrupt(uint8_t byte, int dataSize){
+      ^
+make: *** [Src/function.o] Error 1
+15:13:11 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+../Src/function.c: In function 'masterWriteByteWithInterrupt':
+../Src/function.c:14:16: warning: unused variable 'data' [-Wunused-variable]
+  uint8_t const data = 0x0;
+                ^
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+15:13:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+15:13:18 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:13:27 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:13:39 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:13:45 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6392	     12	   1636	   8040	   1f68	Temperature Sensor.elf
+ 
+15:13:47 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:15:07 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6372	     12	   1636	   8020	   1f54	Temperature Sensor.elf
+ 
+15:15:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6372	     12	   1636	   8020	   1f54	Temperature Sensor.elf
+ 
+15:15:48 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6372	     12	   1636	   8020	   1f54	Temperature Sensor.elf
+ 
+15:15:53 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:16:01 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:16:06 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:19:50 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:19:59 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:25:47 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:25:48 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+15:28:39 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.

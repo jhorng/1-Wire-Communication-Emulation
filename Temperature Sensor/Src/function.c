@@ -11,13 +11,12 @@
 UART_HandleTypeDef huart1;
 
 void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
-	if(byte == 0x0){  // pointer problem
+	if(*byte == 0x0){
 		huart1.Instance->BRR = 480;
 	}
 	else{
-		huart1.Instance->BRR = 180;
+		huart1.Instance->BRR = 72;
 	}
-
 	HAL_UART_Transmit_IT(&huart1, byte, dataSize);
 }
 
@@ -49,7 +48,24 @@ void searchCommand(){
  * 			to the master. Otherwise, error will occur.
  */
 void readCommand(){
-	uint8_t txData[] = {BYTE0, BYTE0, BYTE1, BYTE1, BYTE0, BYTE0, BYTE1, BYTE1};
+	//uint8_t txData[] = {BYTE0, BYTE0, BYTE1, BYTE1, BYTE0, BYTE0, BYTE1, BYTE1};
+	uint8_t bit0 = BYTE1;
+	uint8_t bit1 = BYTE1;
+	uint8_t bit2 = BYTE0;
+	uint8_t bit3 = BYTE0;
+	uint8_t bit4 = BYTE1;
+	uint8_t bit5 = BYTE1;
+	uint8_t bit6 = BYTE0;
+	uint8_t bit7 = BYTE0;
+	uint8_t rxData = 0;		// haven't tested yet
 
-	masterWriteByteWithInterrupt(txData, sizeof(txData));
+	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
+	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
+	masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
+	masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
+	masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
+	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
+	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
+	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+	HAL_UART_Receive_IT(&huart1, &rxData, sizeof(rxData));		// haven't tested yet
 }

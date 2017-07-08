@@ -50,8 +50,6 @@
 #define UART_TX_RX_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
-#define BYTE0 (uint8_t)0x0
-#define BYTE1 (uint8_t)0xFF
 
 /* USER CODE END Private defines */
 

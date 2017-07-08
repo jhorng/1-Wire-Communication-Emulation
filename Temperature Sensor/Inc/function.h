@@ -9,7 +9,7 @@
 #define FUNCTION_H
 
 #define BYTE0 (uint8_t)0x0
-#define BYTE1 (uint8_t)0xFF
+#define BYTE1 (uint8_t)0xFC
 
 void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
 void oneWireReset();
