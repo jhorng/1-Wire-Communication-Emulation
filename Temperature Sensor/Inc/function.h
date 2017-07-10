@@ -14,7 +14,9 @@
 void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
 void masterReadByteWithInterrupt(uint8_t *byte, int dataSize);
 void oneWireReset();
-void searchCommand();
-void readCommand();
+void searchROM();
+void readROM();
+void skipROM();
+void readPowerSupply();
 
 #endif /* FUNCTION_H */

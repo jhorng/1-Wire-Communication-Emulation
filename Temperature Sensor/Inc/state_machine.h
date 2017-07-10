@@ -10,7 +10,8 @@
 
 typedef enum{
 	INIT,
-	SEARCH
+	SEARCH,
+	RECEIVE
 }State;
 
 int fsm(State state);

@@ -12,14 +12,23 @@
 UART_HandleTypeDef huart1;
 
 int fsm(State state){
+	//static uint8_t	rxData[100] = {0};
+	uint8_t bit0 = BYTE0;
 	switch(state){
 	case INIT:
 		oneWireReset();
 		state = SEARCH;
 		break;
 	case SEARCH:
-		searchCommand();
-		//readCommand();
+		skipROM();
+		readPowerSupply();
+		searchROM();
+		//readROM();
+		//HAL_UART_Receive(&huart1, rxData, sizeof(rxData), 0);
+		state = RECEIVE;
+		break;
+	case RECEIVE:
+		masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
 		break;
 	default:
 		state = INIT;
