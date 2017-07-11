@@ -10,18 +10,10 @@
 
 UART_HandleTypeDef huart1;
 
-void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize){
-	if(*byte == BYTE0){
-		huart1.Instance->BRR = 480;
-	}
-	else if(*byte == BYTE1){
-		huart1.Instance->BRR = 432;
-	}
-	else{
-		huart1.Instance->BRR = 625;
-	}
+void masterWriteByteWithInterrupt(uint8_t *txData, int dataSize){
+	huart1.Instance->BRR = 480;
 
-	HAL_UART_Transmit(&huart1, byte, dataSize, 0);
+	HAL_UART_Transmit_IT(&huart1, txData, dataSize);
 }
 
 void oneWireReset(){
@@ -29,7 +21,17 @@ void oneWireReset(){
 
 	huart1.Instance->BRR = 4000;
 
-	HAL_UART_Transmit(&huart1, &reset, sizeof(reset), 0);
+	HAL_UART_Transmit_IT(&huart1, &reset, sizeof(reset));
+}
+
+uint8_t presencePulseDetect(){
+	uint8_t presencePulse = 0;
+
+	huart1.Instance->BRR = 4000;
+
+	HAL_UART_Receive_IT(&huart1, &presencePulse, sizeof(presencePulse));
+
+	return presencePulse;
 }
 
 /*
@@ -39,23 +41,9 @@ void oneWireReset(){
  * 			the registration number.
  */
 void searchROM(){
-	uint8_t bit0 = BYTE0;
-	uint8_t bit1 = BYTE0;
-	uint8_t bit2 = BYTE0;
-	uint8_t bit3 = BYTE0;
-	uint8_t bit4 = BYTE1;
-	uint8_t bit5 = BYTE1;
-	uint8_t bit6 = BYTE1;
-	uint8_t bit7 = BYTE1;
+	uint8_t searchCommand[] = {BYTE0, BYTE0, BYTE0, BYTE0, BYTE1, BYTE1, BYTE1, BYTE1};
 
-	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
-	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
-	masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
-	masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
-	masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
-	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
-	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
-	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+	masterWriteByteWithInterrupt(searchCommand, sizeof(searchCommand));
 }
 
 /*
@@ -65,23 +53,9 @@ void searchROM(){
  * 			to the master. Otherwise, error will occur.
  */
 void readROM(){
-	uint8_t bit0 = BYTE1;
-	uint8_t bit1 = BYTE1;
-	uint8_t bit2 = BYTE0;
-	uint8_t bit3 = BYTE0;
-	uint8_t bit4 = BYTE1;
-	uint8_t bit5 = BYTE1;
-	uint8_t bit6 = BYTE0;
-	uint8_t bit7 = BYTE0;
+	uint8_t readCommand[] = {BYTE1, BYTE1, BYTE0, BYTE0, BYTE1, BYTE1, BYTE0, BYTE0};
 
-	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
-	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
-	masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
-	masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
-	masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
-	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
-	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
-	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+	masterWriteByteWithInterrupt(readCommand, sizeof(readCommand));
 }
 
 void skipROM(){

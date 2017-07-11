@@ -1,0 +1,32 @@
+/*
+ * state_machine.h
+ *
+ *  Created on: Jul 3, 2017
+ *      Author: Prince
+ */
+
+#ifndef STATE_MACHINE_H
+#define STATE_MACHINE_H
+
+typedef enum{
+	UART_RX_EVT,
+	UART_TX_EVT,
+	TIMEOUT_EVT
+};
+
+typedef enum{
+	INIT,
+	INIT_COMPLETE,
+	READ,
+	BIT_SEARCH
+}initState;
+
+typedef struct Event Event;
+struct Event{
+	EventType type;
+	void *data;
+};
+
+int initSM(initState state);
+
+#endif /* STATE_MACHINE_H */

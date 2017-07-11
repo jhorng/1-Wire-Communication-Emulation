@@ -12,8 +12,8 @@
 #define BYTE1 (uint8_t)0xFF
 
 void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
-void masterReadByteWithInterrupt(uint8_t *byte, int dataSize);
 void oneWireReset();
+uint8_t presencePulseDetect();
 void searchROM();
 void readROM();
 void skipROM();

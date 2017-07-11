@@ -46,6 +46,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart1;
+static State state = INIT_STATE;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -71,7 +72,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   //uint8_t Reset_Command, Presence_Pulse, Search_Command;
-  State state = INIT;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -95,6 +95,8 @@ int main(void)
   MX_USART1_UART_Init();
 
   /* USER CODE BEGIN 2 */
+  state = fsm(state);
+  //while((huart1.State == HAL_UART_STATE_BUSY_TX) || (huart1.State == HAL_UART_STATE_BUSY_TX_RX));
 
   /* USER CODE END 2 */
 
@@ -105,7 +107,7 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  state = fsm(state);
+	  //state = initSM(state);
   }
   /* USER CODE END 3 */
 
@@ -195,7 +197,21 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
+	HAL_HalfDuplex_EnableReceiver(huart);
+	uint8_t rxData = presencePulseDetect();
+	if(rxData == 0xFF){
+		state = INIT_STATE;
+	}
+	else{
+		state = RESPONSE_STATE;
+	}
+	state = fsm(state);
+}
 
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+	state = fsm(state);
+}
 /* USER CODE END 4 */
 
 /**

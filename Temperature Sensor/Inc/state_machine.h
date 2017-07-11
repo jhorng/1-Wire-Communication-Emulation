@@ -9,10 +9,27 @@
 #define STATE_MACHINE_H
 
 typedef enum{
-	INIT,
-	SEARCH,
-	RECEIVE
+	UART_RX_CPL_EVT,
+	UART_TX_CPL_EVT,
+	TIMEOUT_EVT
+}EventType;
+
+typedef enum{
+	INIT_STATE,
+	RESPONSE_STATE
 }State;
+
+typedef struct Event Event;
+struct Event{
+	EventType type;
+	void *data;
+};
+
+typedef struct bitSearchSM bitSearchSM;
+struct bitSearchSM{
+	Event event;
+	State state;
+};
 
 int fsm(State state);
 
