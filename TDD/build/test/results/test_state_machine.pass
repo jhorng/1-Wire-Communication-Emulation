@@ -1,0 +1,16 @@
+---
+:source:
+  :path: test
+  :file: test_state_machine.c
+:successes:
+- :test: test_init_state_machine
+  :line: 10
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout: []

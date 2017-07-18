@@ -17,4 +17,6 @@
 "Src/stm32f1xx_hal_msp.o"
 "Src/stm32f1xx_it.o"
 "Src/system_stm32f1xx.o"
+"Src/timer.o"
+"Src/uart.o"
 "startup/startup_stm32f103xb.o"

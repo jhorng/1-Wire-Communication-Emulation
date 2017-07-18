@@ -9,7 +9,9 @@ C_SRCS += \
 ../Src/state_machine.c \
 ../Src/stm32f1xx_hal_msp.c \
 ../Src/stm32f1xx_it.c \
-../Src/system_stm32f1xx.c 
+../Src/system_stm32f1xx.c \
+../Src/timer.c \
+../Src/uart.c 
 
 OBJS += \
 ./Src/function.o \
@@ -17,7 +19,9 @@ OBJS += \
 ./Src/state_machine.o \
 ./Src/stm32f1xx_hal_msp.o \
 ./Src/stm32f1xx_it.o \
-./Src/system_stm32f1xx.o 
+./Src/system_stm32f1xx.o \
+./Src/timer.o \
+./Src/uart.o 
 
 C_DEPS += \
 ./Src/function.d \
@@ -25,7 +29,9 @@ C_DEPS += \
 ./Src/state_machine.d \
 ./Src/stm32f1xx_hal_msp.d \
 ./Src/stm32f1xx_it.d \
-./Src/system_stm32f1xx.d 
+./Src/system_stm32f1xx.d \
+./Src/timer.d \
+./Src/uart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

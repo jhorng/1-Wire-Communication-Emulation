@@ -22,6 +22,8 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o: \
  C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 
 C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -67,5 +69,9 @@ C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Driver
 C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 
 C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
+
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+
+C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
 C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature\ Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:

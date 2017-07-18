@@ -1,0 +1,58 @@
+/*
+ * state_machine.c
+ *
+ *  Created on: Jul 3, 2017
+ *      Author: Prince
+ */
+#include <stdlib.h>
+#include "stm32f1xx_hal.h"
+#include "state_machine.h"
+#include "function.h"
+
+UART_HandleTypeDef huart1;
+
+EventState *initEventState(){
+	EventState *pInit = malloc(sizeof(EventState));
+	pInit->state = INIT_STATE;
+	pInit->type = UART_TX_CPL_EVT;
+	return pInit;
+}
+
+void eventSM(EventState *pEvent){
+	switch(pEvent->type){
+	case UART_TX_CPL_EVT:
+		break;
+	case UART_RX_CPL_EVT:
+		break;
+	case TIMEOUT_EVT:
+		break;
+	default:
+		pEvent->type = UART_TX_CPL_EVT;
+	}
+}
+
+void fsm(EventState *pState){
+	switch(pState->state){
+	case INIT_STATE:
+		oneWireReset();
+		pState->state = RESPONSE_STATE;
+		break;
+	case RESPONSE_STATE:
+		searchROM();
+		pState->state = INIT_STATE;
+		break;
+	default:
+		pState->state = INIT_STATE;
+	}
+}
+
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
+	EventState event;
+	if(event.type == UART_TX_CPL_EVT){
+
+	}
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+
+}

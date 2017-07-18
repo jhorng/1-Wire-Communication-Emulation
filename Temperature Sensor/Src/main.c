@@ -42,11 +42,14 @@
 /* USER CODE BEGIN Includes */
 #include "state_machine.h"
 #include "function.h"
+#include "uart.h"
+#include "event.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
+TIM_HandleTypeDef htim2;
+
 UART_HandleTypeDef huart1;
-static State state = INIT_STATE;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -57,10 +60,11 @@ static State state = INIT_STATE;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_TIM2_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-int fsm(State state);
+
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -93,9 +97,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
+  MX_TIM2_Init();
 
   /* USER CODE BEGIN 2 */
-  state = fsm(state);
+  bitSearchingFSM(START_EVT);
   //while((huart1.State == HAL_UART_STATE_BUSY_TX) || (huart1.State == HAL_UART_STATE_BUSY_TX_RX));
 
   /* USER CODE END 2 */
@@ -161,6 +166,38 @@ void SystemClock_Config(void)
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
+/* TIM2 init function */
+static void MX_TIM2_Init(void)
+{
+
+  TIM_ClockConfigTypeDef sClockSourceConfig;
+  TIM_MasterConfigTypeDef sMasterConfig;
+
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 720;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 167;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_ENABLE;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+}
+
 /* USART1 init function */
 static void MX_USART1_UART_Init(void)
 {
@@ -197,21 +234,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
-	HAL_HalfDuplex_EnableReceiver(huart);
-	uint8_t rxData = presencePulseDetect();
-	if(rxData == 0xFF){
-		state = INIT_STATE;
-	}
-	else{
-		state = RESPONSE_STATE;
-	}
-	state = fsm(state);
-}
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-	state = fsm(state);
-}
 /* USER CODE END 4 */
 
 /**

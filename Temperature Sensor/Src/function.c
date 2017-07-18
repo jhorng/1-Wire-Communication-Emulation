@@ -8,7 +8,7 @@
 #include "stm32f1xx_hal.h"
 #include "function.h"
 
-UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart1;
 
 void masterWriteByteWithInterrupt(uint8_t *txData, int dataSize){
 	huart1.Instance->BRR = 480;
@@ -16,22 +16,20 @@ void masterWriteByteWithInterrupt(uint8_t *txData, int dataSize){
 	HAL_UART_Transmit_IT(&huart1, txData, dataSize);
 }
 
-void oneWireReset(){
-	uint8_t reset = 0x00;
+void resetPulse(){
+	uint8_t reset[2];
 
 	huart1.Instance->BRR = 4000;
 
-	HAL_UART_Transmit_IT(&huart1, &reset, sizeof(reset));
+	HAL_UART_Transmit_IT(&huart1, reset, sizeof(reset));
 }
 
-uint8_t presencePulseDetect(){
+void presencePulseDetect(){
 	uint8_t presencePulse = 0;
 
 	huart1.Instance->BRR = 4000;
 
 	HAL_UART_Receive_IT(&huart1, &presencePulse, sizeof(presencePulse));
-
-	return presencePulse;
 }
 
 /*
@@ -59,41 +57,13 @@ void readROM(){
 }
 
 void skipROM(){
-	uint8_t bit0 = BYTE0;
-	uint8_t bit1 = BYTE0;
-	uint8_t bit2 = BYTE1;
-	uint8_t bit3 = BYTE1;
-	uint8_t bit4 = BYTE0;
-	uint8_t bit5 = BYTE0;
-	uint8_t bit6 = BYTE1;
-	uint8_t bit7 = BYTE1;
+	uint8_t skipCommand[] = {BYTE0, BYTE0, BYTE1, BYTE1, BYTE0, BYTE0, BYTE1, BYTE1};
 
-	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
-	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
-	masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
-	masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
-	masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
-	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
-	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
-	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+	masterWriteByteWithInterrupt(skipCommand, sizeof(skipCommand));
 }
 
 void readPowerSupply(){
-	uint8_t bit0 = BYTE0;
-	uint8_t bit1 = BYTE0;
-	uint8_t bit2 = BYTE1;
-	uint8_t bit3 = BYTE0;
-	uint8_t bit4 = BYTE1;
-	uint8_t bit5 = BYTE1;
-	uint8_t bit6 = BYTE0;
-	uint8_t bit7 = BYTE1;
+	uint8_t readPowSupCommand[] = {BYTE0, BYTE0, BYTE1, BYTE0, BYTE1, BYTE1, BYTE0, BYTE1};
 
-	masterWriteByteWithInterrupt(&bit0, sizeof(bit0));
-	masterWriteByteWithInterrupt(&bit1, sizeof(bit1));
-	masterWriteByteWithInterrupt(&bit2, sizeof(bit2));
-	masterWriteByteWithInterrupt(&bit3, sizeof(bit3));
-	masterWriteByteWithInterrupt(&bit4, sizeof(bit4));
-	masterWriteByteWithInterrupt(&bit5, sizeof(bit5));
-	masterWriteByteWithInterrupt(&bit6, sizeof(bit6));
-	masterWriteByteWithInterrupt(&bit7, sizeof(bit7));
+	masterWriteByteWithInterrupt(readPowSupCommand, sizeof(readPowSupCommand));
 }
