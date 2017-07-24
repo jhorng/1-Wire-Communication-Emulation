@@ -16,7 +16,6 @@ const char* CMockStringCalledLate  = "Called later than expected.";
 const char* CMockStringCallOrder   = "Called out of order.";
 const char* CMockStringIgnPreExp   = "IgnoreArg called before Expect.";
 const char* CMockStringPtrPreExp   = "ReturnThruPtr called before Expect.";
-const char* CMockStringPtrIsNULL   = "Pointer is NULL.";
 const char* CMockStringExpNULL     = "Expected NULL.";
 const char* CMockStringMismatch    = "Function called with unexpected argument value.";
 

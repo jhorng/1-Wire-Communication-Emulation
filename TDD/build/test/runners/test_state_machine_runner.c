@@ -11,7 +11,7 @@
       setUp(); \
       TestFunc(); \
   } \
-  if (TEST_PROTECT()) \
+  if (TEST_PROTECT() && !TEST_IS_IGNORED) \
   { \
     tearDown(); \
   } \
@@ -31,6 +31,14 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_init_state_machine(void);
+extern void test_state_machine_no_change_state_from_IDLE_STATE_to_RESET_STATE_given_other_events();
+extern void test_state_machine_changes_state_from_IDLE_STATE_to_RESET_STATE_given_START_EVT_occurred();
+extern void test_state_machine_changes_state_from_RESET_STATE_to_RESPONSE_STATE_given_UART_TX_CPL_EVT_occurred();
+extern void test_state_machine_no_change_state_from_RESET_STATE_to_RESET_STATE_given_other_events();
+extern void test_state_machine_changes_state_from_RESPONSE_STATE_to_COMMAND_STATE_given_UART_RX_CPL_EVT_occurred();
+extern void test_state_machine_changes_state_from_RESPONSE_STATE_to_RESET_STATE_given_other_events();
+extern void test_state_machine_changes_state_from_COMMAND_STATE_to_RESET_STATE_directly();
+extern void test_dummy();
 
 
 /*=======Test Reset Option=====*/
@@ -46,7 +54,15 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_state_machine.c");
-  RUN_TEST(test_init_state_machine, 10);
+  RUN_TEST(test_init_state_machine, 11);
+  RUN_TEST(test_state_machine_no_change_state_from_IDLE_STATE_to_RESET_STATE_given_other_events, 17);
+  RUN_TEST(test_state_machine_changes_state_from_IDLE_STATE_to_RESET_STATE_given_START_EVT_occurred, 23);
+  RUN_TEST(test_state_machine_changes_state_from_RESET_STATE_to_RESPONSE_STATE_given_UART_TX_CPL_EVT_occurred, 29);
+  RUN_TEST(test_state_machine_no_change_state_from_RESET_STATE_to_RESET_STATE_given_other_events, 36);
+  RUN_TEST(test_state_machine_changes_state_from_RESPONSE_STATE_to_COMMAND_STATE_given_UART_RX_CPL_EVT_occurred, 43);
+  RUN_TEST(test_state_machine_changes_state_from_RESPONSE_STATE_to_RESET_STATE_given_other_events, 50);
+  RUN_TEST(test_state_machine_changes_state_from_COMMAND_STATE_to_RESET_STATE_directly, 57);
+  RUN_TEST(test_dummy, 64);
 
   return (UnityEnd());
 }

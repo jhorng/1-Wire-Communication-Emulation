@@ -95,23 +95,16 @@ class Generator
       shell_result = @tool_executor.exec( command[:line], command[:options] )
     rescue ShellExecutionException => ex
       shell_result = ex.shell_result
-      raise ex
+      raise ''
     ensure
       arg_hash[:shell_result] = shell_result
       @plugin_manager.post_compile_execute(arg_hash)
     end
   end
 
-  def generate_executable_file(tool, context, objects, executable, map='', libraries=[])
+  def generate_executable_file(tool, context, objects, executable, map='')
     shell_result = {}
-    arg_hash = { :tool => tool,
-                 :context => context,
-                 :objects => objects,
-                 :executable => executable,
-                 :map => map,
-                 :libraries => libraries
-               }
-
+    arg_hash = {:tool => tool, :context => context, :objects => objects, :executable => executable, :map => map}
     @plugin_manager.pre_link_execute(arg_hash)
 
     @streaminator.stdout_puts("Linking #{File.basename(arg_hash[:executable])}...", Verbosity::NORMAL)
@@ -120,9 +113,7 @@ class Generator
                                          @flaginator.flag_down( OPERATION_LINK_SYM, context, executable ),
                                          arg_hash[:objects],
                                          arg_hash[:executable],
-                                         arg_hash[:map],
-                                         arg_hash[:libraries]
-                                       )
+                                         arg_hash[:map])
 
     begin
       shell_result = @tool_executor.exec( command[:line], command[:options] )
@@ -158,7 +149,7 @@ class Generator
     command = @tool_executor.build_command_line(arg_hash[:tool], [], arg_hash[:executable])
     command[:options][:boom] = false
     shell_result = @tool_executor.exec( command[:line], command[:options] )
-    shell_result[:exit_code] = 0 #Don't Let The Failure Count Make Us Believe Things Aren't Working
+
     @generator_helper.test_results_error_handler(executable, shell_result)
 
     processed = @generator_test_results.process_and_write_results( shell_result,

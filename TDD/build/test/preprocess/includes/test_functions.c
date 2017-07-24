@@ -1,4 +1,3 @@
 ---
 - unity.h
 - functions.h
-- build/temp/_test_functions.c

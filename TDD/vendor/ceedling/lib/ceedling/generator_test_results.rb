@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rake' # for .ext()
 require 'ceedling/constants'
+
  
 class GeneratorTestResults
 
@@ -79,9 +80,7 @@ class GeneratorTestResults
     
     # collect up test results minus and extra output
     elements = (line.strip.split(':'))[1..-1]
-
-    return {:test => elements[1], :line => elements[0].to_i, :message => (elements[3..-1].join(':')).strip}, stdout if elements.size >= 3
-    return {:test => '???', :line => -1, :message => nil} #fallback safe option. TODO better handling
+    return {:test => elements[1], :line => elements[0].to_i, :message => (elements[3..-1].join(':')).strip}, stdout
   end
 
 end

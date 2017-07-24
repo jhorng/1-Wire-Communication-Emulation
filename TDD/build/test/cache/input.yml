@@ -11,9 +11,6 @@
   :release_build: false
   :use_auxiliary_dependencies: true
   :build_root: build
-  :which_ceedling: vendor/ceedling
-  :default_tasks:
-  - test:all
 :release_build:
   :use_assembly: false
   :artifacts: []
@@ -45,18 +42,7 @@
   - TEST
   :release: []
   :release_preprocess: []
-  :use_test_definition: false
   :commmon: []
-:libraries:
-  :test:
-  - &2 []
-  :test_preprocess: []
-  :release:
-  - *2
-  :release_preprocess: []
-  :placement: :end
-  :flag: "${1}"
-  :common: []
 :flags: {}
 :extension:
   :header: ".h"
@@ -70,12 +56,11 @@
   :testfail: ".fail"
   :dependencies: ".d"
 :unity:
-  :vendor_path: C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/TDD/vendor/ceedling/vendor
+  :vendor_path: c:/Users/Prince/Desktop/1-Wire-Communication-Emulation/TDD/vendor/ceedling/vendor
   :defines: []
 :cmock:
-  :vendor_path: C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/TDD/vendor/ceedling/vendor
+  :vendor_path: c:/Users/Prince/Desktop/1-Wire-Communication-Emulation/TDD/vendor/ceedling/vendor
   :defines: []
-  :includes: []
   :mock_prefix: mock_
   :when_no_prototypes: :warn
   :enforce_strict_ordering: true
@@ -92,7 +77,7 @@
   :verbosity: 3
   :unity_helper: false
 :cexception:
-  :vendor_path: C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/TDD/vendor/ceedling/vendor
+  :vendor_path: c:/Users/Prince/Desktop/1-Wire-Communication-Emulation/TDD/vendor/ceedling/vendor
   :defines: []
 :test_runner:
   :includes: []
@@ -128,8 +113,6 @@
     :arguments:
     - '"${1}"'
     - -o "${2}"
-    - ''
-    - "${4}"
   :test_file_preprocessor:
     :executable: gcc.exe
     :name: default_test_file_preprocessor
@@ -192,8 +175,6 @@
   :display_raw_test_results: false
   :stdout_pretty_tests_report_path: vendor/ceedling/plugins/stdout_pretty_tests_report/lib
   :module_generator_path: vendor/ceedling/plugins/module_generator/lib
-:gcov:
-  :html_report_type: basic
 :module_generator:
   :project_root: "./"
   :source_root: src/

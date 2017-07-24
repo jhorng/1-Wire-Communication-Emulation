@@ -5,7 +5,6 @@
 */
 
 #include <stdio.h>
-#include <string.h>
 #include "event_processor.h"
 #include "display.h"
 

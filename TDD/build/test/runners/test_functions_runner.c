@@ -11,7 +11,7 @@
       setUp(); \
       TestFunc(); \
   } \
-  if (TEST_PROTECT()) \
+  if (TEST_PROTECT() && !TEST_IS_IGNORED) \
   { \
     tearDown(); \
   } \
@@ -30,7 +30,6 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_functions_NeedToImplement(void);
 
 
 /*=======Test Reset Option=====*/
@@ -46,7 +45,6 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_functions.c");
-  RUN_TEST(test_functions_NeedToImplement, 12);
 
   return (UnityEnd());
 }

@@ -1,22 +1,16 @@
-16:50:31 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+16:57:10 **** Incremental Build of configuration Debug for project Temperature Sensor ****
 make all 
-Building file: ../Src/main.c
+Building file: ../Src/function.c
 Invoking: MCU GCC Compiler
-C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-Finished building: ../Src/main.c
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
  
 Building file: ../Src/state_machine.c
 Invoking: MCU GCC Compiler
-C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
 Finished building: ../Src/state_machine.c
- 
-Building file: ../Src/timer.c
-Invoking: MCU GCC Compiler
-C:\Users\TARUC\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" -o "Src/timer.o" "../Src/timer.c"
-Finished building: ../Src/timer.c
  
 Building target: Temperature Sensor.elf
 Invoking: MCU GCC Linker
@@ -28,8 +22,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
 arm-none-eabi-size "Temperature Sensor.elf"
    text	   data	    bss	    dec	    hex	filename
-   7276	     24	   1696	   8996	   2324	Temperature Sensor.elf
+   7284	     24	   1696	   9004	   232c	Temperature Sensor.elf
  
 
-16:50:32 Build Finished (took 1s.390ms)
+16:57:13 Build Finished (took 3s.80ms)
 

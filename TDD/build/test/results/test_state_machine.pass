@@ -4,13 +4,38 @@
   :file: test_state_machine.c
 :successes:
 - :test: test_init_state_machine
-  :line: 10
+  :line: 11
+  :message: ''
+- :test: test_state_machine_no_change_state_from_IDLE_STATE_to_RESET_STATE_given_other_events
+  :line: 17
+  :message: ''
+- :test: test_state_machine_changes_state_from_IDLE_STATE_to_RESET_STATE_given_START_EVT_occurred
+  :line: 23
+  :message: ''
+- :test: test_state_machine_changes_state_from_RESET_STATE_to_RESPONSE_STATE_given_UART_TX_CPL_EVT_occurred
+  :line: 29
+  :message: ''
+- :test: test_state_machine_no_change_state_from_RESET_STATE_to_RESET_STATE_given_other_events
+  :line: 36
+  :message: ''
+- :test: test_state_machine_changes_state_from_RESPONSE_STATE_to_COMMAND_STATE_given_UART_RX_CPL_EVT_occurred
+  :line: 43
+  :message: ''
+- :test: test_state_machine_changes_state_from_RESPONSE_STATE_to_RESET_STATE_given_other_events
+  :line: 50
+  :message: ''
+- :test: test_state_machine_changes_state_from_COMMAND_STATE_to_RESET_STATE_directly
+  :line: 57
+  :message: ''
+- :test: test_dummy
+  :line: 64
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 1
-  :passed: 1
+  :total: 9
+  :passed: 9
   :failed: 0
   :ignored: 0
-:stdout: []
+:stdout:
+- ''

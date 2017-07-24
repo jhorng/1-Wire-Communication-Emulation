@@ -12,7 +12,7 @@ class SystemWrapper
   def windows?
     return SystemWrapper.windows?
   end
-
+  
   def module_eval(string)
     return Object.module_eval("\"" + string + "\"")
   end
@@ -32,7 +32,7 @@ class SystemWrapper
   def env_set(name, value)
     ENV[name] = value
   end
-
+  
   def env_get(name)
     return ENV[name]
   end
@@ -41,40 +41,36 @@ class SystemWrapper
     return Time.now.asctime
   end
 
-  def shell_backticks(command, boom = true)
-    retval = `#{command}`.freeze
-    $exit_code = ($?.exitstatus).freeze if boom
+  def shell_backticks(command)
     return {
-      :output    => retval.freeze,
+      :output    => `#{command}`.freeze,
       :exit_code => ($?.exitstatus).freeze
     }
   end
 
-  def shell_system(command, boom = true)
+  def shell_system(command)
     system( command )
-    $exit_code = ($?.exitstatus).freeze if boom
     return {
-      :output    => "".freeze,
+      :output    => ''.freeze,
       :exit_code => ($?.exitstatus).freeze
     }
   end
-
+  
   def add_load_path(path)
     $LOAD_PATH.unshift(path)
   end
-
+  
   def require_file(path)
     require(path)
   end
 
   def ruby_success
-    # We are successful if we've never had an exit code that went boom (either because it's empty or it was 0)
-    return ($exit_code.nil? || ($exit_code == 0)) && ($!.nil? || $!.is_a?(SystemExit) && $!.success?)
+    return ($!.nil? || $!.is_a?(SystemExit) && $!.success?)
   end
 
   def constants_include?(item)
     # forcing to strings provides consistency across Ruby versions
     return Object.constants.map{|constant| constant.to_s}.include?(item.to_s)
   end
-
+  
 end

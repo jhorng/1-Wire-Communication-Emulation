@@ -64,8 +64,7 @@ class ConfiguratorBuilder
   def populate_defaults(config, defaults)
     defaults.keys.sort.each do |section|
       defaults[section].keys.sort.each do |entry|
-        config[section] = {} if config[section].nil?
-        config[section][entry] = defaults[section][entry].deep_clone if (config[section][entry].nil?)
+        config[section][entry] = defaults[section][entry].deep_clone if (config[section].nil? or config[section][entry].nil?)
       end
     end
   end
@@ -392,12 +391,10 @@ class ConfiguratorBuilder
 
     # if we're using mocks & a unity helper is defined & that unity helper includes a source file component (not only a header of macros),
     # then link in the unity_helper object file too
-    if ( in_hash[:project_use_mocks] and in_hash[:cmock_unity_helper] )
-      in_hash[:cmock_unity_helper].each do |helper|
-        if @file_wrapper.exist?(helper.ext(in_hash[:extension_source]))
-          objects << File.basename(helper)
-        end
-      end
+    if ( in_hash[:project_use_mocks] and
+         in_hash[:cmock_unity_helper] and
+         @file_wrapper.exist?(in_hash[:cmock_unity_helper].ext(in_hash[:extension_source])) )
+      objects << File.basename(in_hash[:cmock_unity_helper])
     end
 
     # no build paths here so plugins can remap if necessary (i.e. path mapping happens at runtime)

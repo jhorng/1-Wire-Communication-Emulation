@@ -56,11 +56,20 @@ void fsm(EventState *pState){
 
 BitSearchingInfo bsi = {IDLE_STATE, BYTE0, BYTE0, BYTE1, BYTE0, BYTE1, BYTE0, BYTE0, BYTE0};
 
+void counter(){
+	volatile int i=0;
+	while(i<2500){
+		i++;
+	}
+}
+
 void bitSearchingFSM(Event evt){
 	switch(bsi.state){
 	case IDLE_STATE:
 		if(evt == START_EVT){
 			HAL_HalfDuplex_EnableTxRx(&huart1);
+			//HAL_HalfDuplex_EnableTransmitter(&huart1);
+			__HAL_TIM_ENABLE(&htim2);
 		    HAL_TIM_Base_Start_IT(&htim2);
 			resetPulse();
 			bsi.state = RESET_STATE;
@@ -68,11 +77,12 @@ void bitSearchingFSM(Event evt){
 		break;
 	case RESET_STATE:
 		if(evt == UART_TX_CPL_EVT){
+			//HAL_HalfDuplex_EnableReceiver(&huart1);
 			presencePulseDetect();
 			bsi.state = RESPONSE_STATE;
 		}
 		else{
-			bsi.state = RESET_STATE;
+			bsi.state = IDLE_STATE;
 		}
 		break;
 	case RESPONSE_STATE:

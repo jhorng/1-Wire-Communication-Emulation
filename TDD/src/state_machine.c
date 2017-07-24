@@ -1,8 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "state_machine.h"
+#include "functions.h"
 
 BitSearchingInfo bsi = {IDLE_STATE, 12, 42};
+
+int buffer(int elem1, int elem2){
+  int *ptr = (int *)malloc(2);
+  ptr[0] = elem1;
+  ptr[1] = elem2;
+  return (int)ptr;
+}
 
 void BitSearchingFSM(Event evt){
   switch(bsi.state){
@@ -33,4 +41,12 @@ void BitSearchingFSM(Event evt){
 	default:
 		bsi.state = RESET_STATE;
   }
+}
+
+void HAL_UART_TxCpltCallback(){
+  BitSearchingFSM(UART_TX_CPL_EVT);
+}
+
+void HAL_UART_RxCpltCallback(){
+  BitSearchingFSM(UART_RX_CPL_EVT);
 }

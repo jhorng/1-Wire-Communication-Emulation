@@ -4,13 +4,11 @@
   :file: test_functions.c
 :successes: []
 :failures: []
-:ignores:
-- :test: test_functions_NeedToImplement
-  :line: 14
-  :message: Need to Implement functions
+:ignores: []
 :counts:
-  :total: 1
+  :total: 0
   :passed: 0
   :failed: 0
-  :ignored: 1
-:stdout: []
+  :ignored: 0
+:stdout:
+- ''

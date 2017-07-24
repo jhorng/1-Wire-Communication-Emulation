@@ -22,6 +22,9 @@ struct BitSearchingInfo{
   int data2;
 };
 
-void BitSearchingFSM(Event evt);
+int buffer(int elem1, int elem2);
+void bitSearchingFSM(Event evt);
+void HAL_UART_TxCpltCallback();
+void HAL_UART_RxCpltCallback();
 
 #endif // _STATE_MACHINE_H

@@ -4,7 +4,6 @@ require 'ceedling/file_path_utils'
 
 #this should be defined already, but not always during system specs
 CEEDLING_VENDOR = File.expand_path(File.dirname(__FILE__) + '/../../vendor') unless defined? CEEDLING_VENDOR
-CEEDLING_PLUGINS = [File.expand_path(File.dirname(__FILE__) + '/../../plugins')] unless defined? CEEDLING_PLUGINS
 
 DEFAULT_TEST_COMPILER_TOOL = {
   :executable => FilePathUtils.os_executable_ext('gcc').freeze,
@@ -33,8 +32,6 @@ DEFAULT_TEST_LINKER_TOOL = {
   :arguments => [
     "\"${1}\"".freeze,
     "-o \"${2}\"".freeze,
-    "".freeze,
-    "${4}".freeze
     ].freeze
   }
 
@@ -183,8 +180,6 @@ DEFAULT_RELEASE_LINKER_TOOL = {
   :arguments => [
     "\"${1}\"".freeze,
     "-o \"${2}\"".freeze,
-    "".freeze,
-    "${4}".freeze
     ].freeze
   }
 
@@ -281,14 +276,6 @@ DEFAULT_CEEDLING_CONFIG = {
       :test_preprocess => [],
       :release => [],
       :release_preprocess => [],
-      :use_test_definition => false,
-    },
-
-    :libraries => {
-      :test => [],
-      :test_preprocess => [],
-      :release => [],
-      :release_preprocess => [],
     },
 
     :flags => {},
@@ -313,8 +300,7 @@ DEFAULT_CEEDLING_CONFIG = {
 
     :cmock => {
       :vendor_path => CEEDLING_VENDOR,
-      :defines => [],
-      :includes => []
+      :defines => []
     },
 
     :cexception => {
@@ -347,7 +333,7 @@ DEFAULT_CEEDLING_CONFIG = {
     :release_dependencies_generator => { :arguments => [] },
 
     :plugins => {
-      :load_paths => [], #XXX this is injected twice as of now so removed til better handling is found CEEDLING_PLUGINS,
+      :load_paths => [],
       :enabled => [],
     }
   }.freeze
