@@ -51,6 +51,7 @@ TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
 
+
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 
@@ -76,6 +77,10 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   //uint8_t Reset_Command, Presence_Pulse, Search_Command;
+  uint8_t txData[] = {0x69, 0x23, 0x57, 0x88};
+  uint8_t rxData[5] = {0};
+  volatile int txResult, rxResult;
+  //volatile int i=0;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -100,8 +105,14 @@ int main(void)
   MX_TIM2_Init();
 
   /* USER CODE BEGIN 2 */
-  bitSearchingFSM(START_EVT);
+  HAL_HalfDuplex_EnableTxRx(&huart1);
+  huart1.Instance->BRR = 4000;
+
+  //bitSearchingFSM(START_EVT);
   //while((huart1.State == HAL_UART_STATE_BUSY_TX) || (huart1.State == HAL_UART_STATE_BUSY_TX_RX));
+  rxResult = HAL_UART_Receive_IT(&huart1, rxData, sizeof(txData));
+
+  txResult = HAL_UART_Transmit_IT(&huart1, txData, sizeof(txData));
 
   /* USER CODE END 2 */
 

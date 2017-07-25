@@ -9,7 +9,7 @@
 #include "function.h"
 
 extern UART_HandleTypeDef huart1;
-uint8_t presencePulse[] = {0,0};
+uint8_t presencePulse[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 void masterWriteByteWithInterrupt(uint8_t *txData, int dataSize){
 	huart1.Instance->BRR = 480;
@@ -26,7 +26,7 @@ void resetPulse(){
 }
 
 void presencePulseDetect(){
-	//uint8_t presencePulse[] = {0,0};
+	//uint8_t presencePulse[2];
 
 	huart1.Instance->BRR = 4000;
 

@@ -33,7 +33,6 @@ struct BitSearchingInfo{
 /*EventState *initEventState();
 void eventSM(EventState *pEvent);
 void fsm(EventState *pState);*/
-void counter();
 void bitSearchingFSM(Event evt);
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart);
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
