@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc
+HeaderPath=C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Src
+SourcePath=C:/Users/TARUC/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Src
 SourceFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]

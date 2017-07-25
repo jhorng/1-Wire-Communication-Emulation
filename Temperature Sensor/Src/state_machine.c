@@ -14,47 +14,11 @@
 extern TIM_HandleTypeDef htim2;
 extern UART_HandleTypeDef huart1;
 
-/*
-EventState *initEventState(){
-	EventState *pInit = malloc(sizeof(EventState));
-	pInit->state = INIT_STATE;
-	pInit->type = UART_TX_CPL_EVT;
-	return pInit;
-}
-
-void eventSM(EventState *pEvent){
-	switch(pEvent->type){
-	case UART_TX_CPL_EVT:
-		if(pEvent->state == INIT_STATE){
-			presencePulseDetect();
-		}
-		break;
-	case UART_RX_CPL_EVT:
-		break;
-	case TIMEOUT_EVT:
-		break;
-	default:
-		pEvent->type = UART_TX_CPL_EVT;
-	}
-}
-
-void fsm(EventState *pState){
-	switch(pState->state){
-	case INIT_STATE:
-		resetPulse();
-		counter(2500);
-		pState->state = RESPONSE_STATE;
-		break;
-	case RESPONSE_STATE:
-		searchROM();
-		pState->state = INIT_STATE;
-		break;
-	default:
-		pState->state = INIT_STATE;
-	}
-}*/
-
 BitSearchingInfo bsi = {IDLE_STATE, BYTE0, BYTE0, BYTE1, BYTE0, BYTE1, BYTE0, BYTE0, BYTE0};
+uint8_t reset = 0xE0;
+uint8_t presencePulse[] = {0};
+uint8_t rxTrueCplmtBit[] = {0, 0};
+
 
 void bitSearchingFSM(Event evt){
 	switch(bsi.state){
@@ -63,22 +27,22 @@ void bitSearchingFSM(Event evt){
 			HAL_HalfDuplex_EnableTxRx(&huart1);
 			__HAL_TIM_ENABLE(&htim2);
 		    HAL_TIM_Base_Start_IT(&htim2);
-			resetPulse();
+			huart1.Instance->BRR = 6240;
+			HAL_UART_Receive_IT(&huart1, presencePulse, sizeof(presencePulse));
+		    HAL_UART_Transmit_IT(&huart1, &reset, sizeof(reset));
 			bsi.state = RESET_STATE;
 		}
 		break;
 	case RESET_STATE:
 		if(evt == UART_TX_CPL_EVT){
-			presencePulseDetect();
-			bsi.state = IDLE_STATE;
+			bsi.state = RESPONSE_STATE;
 		}
 		else{
 			bsi.state = IDLE_STATE;
 		}
 		break;
-	/*case RESPONSE_STATE:
+	case RESPONSE_STATE:
 		if(evt == UART_RX_CPL_EVT){
-			searchROM();
 			bsi.state = COMMAND_STATE;
 		}
 		else{
@@ -86,17 +50,12 @@ void bitSearchingFSM(Event evt){
 		}
 		break;
 	case COMMAND_STATE:
+		if(evt == TIMEOUT_EVT){
+			searchROM();
+		}
 		bsi.state = RESET_STATE;
-		break;*/
+		break;
 	default:
 		bsi.state = RESET_STATE;
 	}
-}
-
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
-	bitSearchingFSM(UART_TX_CPL_EVT);
-}
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-	bitSearchingFSM(UART_RX_CPL_EVT);
 }

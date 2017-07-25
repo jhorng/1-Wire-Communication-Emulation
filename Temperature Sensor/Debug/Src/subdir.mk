@@ -4,33 +4,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Src/callback.c \
 ../Src/function.c \
 ../Src/main.c \
 ../Src/state_machine.c \
 ../Src/stm32f1xx_hal_msp.c \
 ../Src/stm32f1xx_it.c \
 ../Src/system_stm32f1xx.c \
-../Src/timer.c \
 ../Src/uart.c 
 
 OBJS += \
+./Src/callback.o \
 ./Src/function.o \
 ./Src/main.o \
 ./Src/state_machine.o \
 ./Src/stm32f1xx_hal_msp.o \
 ./Src/stm32f1xx_it.o \
 ./Src/system_stm32f1xx.o \
-./Src/timer.o \
 ./Src/uart.o 
 
 C_DEPS += \
+./Src/callback.d \
 ./Src/function.d \
 ./Src/main.d \
 ./Src/state_machine.d \
 ./Src/stm32f1xx_hal_msp.d \
 ./Src/stm32f1xx_it.d \
 ./Src/system_stm32f1xx.d \
-./Src/timer.d \
 ./Src/uart.d 
 
 
