@@ -105,14 +105,10 @@ int main(void)
   MX_TIM2_Init();
 
   /* USER CODE BEGIN 2 */
-  HAL_HalfDuplex_EnableTxRx(&huart1);
-  //huart1.Instance->BRR = 6240;
-  bitSearchingFSM(START_EVT);
-  //while((huart1.State == HAL_UART_STATE_BUSY_TX) || (huart1.State == HAL_UART_STATE_BUSY_TX_RX));
-  //rxResult = HAL_UART_Receive_IT(&huart1, rxData, sizeof(rxData));
-
-  //txResult = HAL_UART_Transmit_IT(&huart1, &txData, sizeof(txData));
-
+  __HAL_TIM_ENABLE(&htim2);
+  HAL_TIM_Base_Start_IT(&htim2);
+  //HAL_HalfDuplex_EnableTxRx(&huart1);
+  //bitSearchingFSM(START_EVT);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -184,9 +180,9 @@ static void MX_TIM2_Init(void)
   TIM_MasterConfigTypeDef sMasterConfig;
 
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 72;
+  htim2.Init.Prescaler = 720;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 240000000;
+  htim2.Init.Period = 95;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
   {
@@ -237,9 +233,21 @@ static void MX_USART1_UART_Init(void)
 static void MX_GPIO_Init(void)
 {
 
+  GPIO_InitTypeDef GPIO_InitStruct;
+
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : amberLed_Pin */
+  GPIO_InitStruct.Pin = amberLed_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(amberLed_GPIO_Port, &GPIO_InitStruct);
 
 }
 

@@ -44,13 +44,13 @@
 #include "function.h"
 #include "uart.h"
 #include "event.h"
+#include "callback.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
-
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -77,9 +77,9 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   //uint8_t Reset_Command, Presence_Pulse, Search_Command;
-  uint8_t txData = 0;
-  uint8_t rxData[512] = {0};
-  volatile int txResult, rxResult;
+  /*uint8_t txData = 0xE0;
+  uint8_t rxData[2] = {0};
+  volatile int txResult, rxResult;*/
   //volatile int i=0;
   /* USER CODE END 1 */
 
@@ -105,15 +105,10 @@ int main(void)
   MX_TIM2_Init();
 
   /* USER CODE BEGIN 2 */
-  HAL_HalfDuplex_EnableTxRx(&huart1);
-  huart1.Instance->BRR = 4000;
-
+  __HAL_TIM_ENABLE(&htim2);
+  HAL_TIM_Base_Start_IT(&htim2);
+  //HAL_HalfDuplex_EnableTxRx(&huart1);
   //bitSearchingFSM(START_EVT);
-  //while((huart1.State == HAL_UART_STATE_BUSY_TX) || (huart1.State == HAL_UART_STATE_BUSY_TX_RX));
-  rxResult = HAL_UART_Receive_IT(&huart1, rxData, sizeof(rxData));
-
-  txResult = HAL_UART_Transmit_IT(&huart1, &txData1, sizeof(txData1));
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -187,7 +182,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 720;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 167;
+  htim2.Init.Period = 144;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
   {
@@ -238,9 +233,21 @@ static void MX_USART1_UART_Init(void)
 static void MX_GPIO_Init(void)
 {
 
+  GPIO_InitTypeDef GPIO_InitStruct;
+
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin : amberLed_Pin */
+  GPIO_InitStruct.Pin = amberLed_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(amberLed_GPIO_Port, &GPIO_InitStruct);
 
 }
 

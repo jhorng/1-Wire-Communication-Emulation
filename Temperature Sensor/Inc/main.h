@@ -48,6 +48,8 @@
 
 #define UART_TX_RX_Pin GPIO_PIN_9
 #define UART_TX_RX_GPIO_Port GPIOA
+#define amberLed_Pin GPIO_PIN_5
+#define amberLed_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
