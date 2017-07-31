@@ -2,7 +2,7 @@
  * uart.c
  *
  *  Created on: Jul 18, 2017
- *      Author: TARUC
+ *      Author: Jaan Horng
  */
 #include "stm32f1xx_hal.h"
 #include "uart.h"

@@ -44,6 +44,7 @@
 #include "function.h"
 #include "uart.h"
 #include "event.h"
+#include "callback.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -104,7 +105,7 @@ int main(void)
   MX_TIM2_Init();
 
   /* USER CODE BEGIN 2 */
-  //HAL_HalfDuplex_EnableTxRx(&huart1);
+  HAL_HalfDuplex_EnableTxRx(&huart1);
   //huart1.Instance->BRR = 6240;
   bitSearchingFSM(START_EVT);
   //while((huart1.State == HAL_UART_STATE_BUSY_TX) || (huart1.State == HAL_UART_STATE_BUSY_TX_RX));
@@ -185,7 +186,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 72;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 960;
+  htim2.Init.Period = 240000000;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
   {
