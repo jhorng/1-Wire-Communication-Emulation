@@ -8,6 +8,7 @@
 #include "stm32f1xx_hal.h"
 #include "state_machine.h"
 #include "event.h"
+#include "function.h"
 
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
 	bitSearchingFSM(UART_TX_CPL_EVT);
@@ -18,6 +19,5 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	HAL_GPIO_TogglePin(amberLed_GPIO_Port, amberLed_Pin);
-	//bitSearchingFSM(TIMEOUT_EVT);
+	bitSearchingFSM(TIMEOUT_EVT);
 }
