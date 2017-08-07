@@ -56,6 +56,8 @@ void bitSearchingFSM(Event evt){
 			readROM();
 			bsi.state = COMMAND_STATE;
 		}
+    else
+      bsi.state = IDLE_STATE;
 		break;
 	case COMMAND_STATE:
 		if(evt == UART_TX_CPL_EVT){

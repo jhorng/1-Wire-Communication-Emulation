@@ -32,6 +32,18 @@ void timerStart_CMockIgnore(void);
 void timerStart_CMockExpect(UNITY_LINE_TYPE cmock_line, TIM_HandleTypeDef* htim);
 typedef void (* CMOCK_timerStart_CALLBACK)(TIM_HandleTypeDef* htim, int cmock_num_calls);
 void timerStart_StubWithCallback(CMOCK_timerStart_CALLBACK Callback);
+#define timerStop_Ignore() timerStop_CMockIgnore()
+void timerStop_CMockIgnore(void);
+#define timerStop_Expect(htim) timerStop_CMockExpect(__LINE__, htim)
+void timerStop_CMockExpect(UNITY_LINE_TYPE cmock_line, TIM_HandleTypeDef* htim);
+typedef void (* CMOCK_timerStop_CALLBACK)(TIM_HandleTypeDef* htim, int cmock_num_calls);
+void timerStop_StubWithCallback(CMOCK_timerStop_CALLBACK Callback);
+#define masterReadSlot_Ignore() masterReadSlot_CMockIgnore()
+void masterReadSlot_CMockIgnore(void);
+#define masterReadSlot_Expect() masterReadSlot_CMockExpect(__LINE__)
+void masterReadSlot_CMockExpect(UNITY_LINE_TYPE cmock_line);
+typedef void (* CMOCK_masterReadSlot_CALLBACK)(int cmock_num_calls);
+void masterReadSlot_StubWithCallback(CMOCK_masterReadSlot_CALLBACK Callback);
 #define HAL_UART_Receive_IT_IgnoreAndReturn(cmock_retval) HAL_UART_Receive_IT_CMockIgnoreAndReturn(__LINE__, cmock_retval)
 void HAL_UART_Receive_IT_CMockIgnoreAndReturn(UNITY_LINE_TYPE cmock_line, HAL_StatusTypeDef cmock_to_return);
 #define HAL_UART_Receive_IT_ExpectAndReturn(huart, pData, Size, cmock_retval) HAL_UART_Receive_IT_CMockExpectAndReturn(__LINE__, huart, pData, Size, cmock_retval)
