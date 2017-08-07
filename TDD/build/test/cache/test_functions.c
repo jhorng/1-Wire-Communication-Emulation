@@ -1,3 +1,4 @@
+#include "mock_functions.h"
 #include "functions.h"
 #include "unity.h"
 

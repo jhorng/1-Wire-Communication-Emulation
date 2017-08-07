@@ -16,8 +16,8 @@ extern TIM_HandleTypeDef htim2;
 extern UART_HandleTypeDef huart1;
 
 BitSearchingInfo bsi = {IDLE_STATE};
-uint8_t reset = 0xE0;
-uint8_t presencePulse[] = {0};
+//uint8_t reset = 0xE0;
+uint8_t presencePulse;
 uint8_t responsePulse[100] = {0};
 char regisNum[64] = {0};
 volatile int i, j=0;
@@ -28,9 +28,8 @@ void bitSearchingFSM(Event evt){
 		if(evt == START_EVT){
 			HAL_HalfDuplex_EnableTxRx(&huart1);
 			timerStart(&htim2);
-			huart1.Instance->BRR = 6240;
-			HAL_UART_Receive_IT(&huart1, presencePulse, sizeof(presencePulse));
-		    HAL_UART_Transmit_IT(&huart1, &reset, sizeof(reset));
+			HAL_UART_Receive_IT(&huart1, &presencePulse, sizeof(presencePulse));
+			resetPulse();
 			bsi.state = RESET_STATE;
 		}
 		break;

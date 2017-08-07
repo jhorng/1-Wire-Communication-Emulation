@@ -3,38 +3,29 @@
   :path: test
   :file: test_state_machine.c
 :successes:
-- :test: test_init_state_machine
-  :line: 11
+- :test: test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into_RESET_STATE
+  :line: 16
   :message: ''
-- :test: test_state_machine_no_change_state_from_IDLE_STATE_to_RESET_STATE_given_other_events
-  :line: 17
+- :test: test_state_machine_receives_other_event_will_remain_in_IDLE_STATE
+  :line: 27
   :message: ''
-- :test: test_state_machine_changes_state_from_IDLE_STATE_to_RESET_STATE_given_START_EVT_occurred
-  :line: 23
+- :test: test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE
+  :line: 38
   :message: ''
-- :test: test_state_machine_changes_state_from_RESET_STATE_to_RESPONSE_STATE_given_UART_TX_CPL_EVT_occurred
-  :line: 29
+- :test: test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE
+  :line: 45
   :message: ''
-- :test: test_state_machine_no_change_state_from_RESET_STATE_to_RESET_STATE_given_other_events
-  :line: 36
+- :test: test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE
+  :line: 52
   :message: ''
-- :test: test_state_machine_changes_state_from_RESPONSE_STATE_to_COMMAND_STATE_given_UART_RX_CPL_EVT_occurred
-  :line: 43
-  :message: ''
-- :test: test_state_machine_changes_state_from_RESPONSE_STATE_to_RESET_STATE_given_other_events
-  :line: 50
-  :message: ''
-- :test: test_state_machine_changes_state_from_COMMAND_STATE_to_RESET_STATE_directly
-  :line: 57
-  :message: ''
-- :test: test_dummy
-  :line: 64
+- :test: test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE
+  :line: 59
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 9
-  :passed: 9
+  :total: 6
+  :passed: 6
   :failed: 0
   :ignored: 0
 :stdout:

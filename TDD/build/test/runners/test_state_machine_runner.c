@@ -6,6 +6,8 @@
   Unity.CurrentTestName = #TestFunc; \
   Unity.CurrentTestLineNumber = TestLineNum; \
   Unity.NumberOfTests++; \
+  CMock_Init(); \
+  UNITY_CLR_DETAILS(); \
   if (TEST_PROTECT()) \
   { \
       setUp(); \
@@ -14,14 +16,19 @@
   if (TEST_PROTECT() && !TEST_IS_IGNORED) \
   { \
     tearDown(); \
+    CMock_Verify(); \
   } \
+  CMock_Destroy(); \
   UnityConcludeTest(); \
 }
 
 /*=======Automagically Detected Files To Include=====*/
 #include "unity.h"
+#include "cmock.h"
 #include <setjmp.h>
 #include <stdio.h>
+#include "mock_functions.h"
+#include "mock_callback.h"
 
 int GlobalExpectCount;
 int GlobalVerifyOrder;
@@ -30,22 +37,42 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_init_state_machine(void);
-extern void test_state_machine_no_change_state_from_IDLE_STATE_to_RESET_STATE_given_other_events();
-extern void test_state_machine_changes_state_from_IDLE_STATE_to_RESET_STATE_given_START_EVT_occurred();
-extern void test_state_machine_changes_state_from_RESET_STATE_to_RESPONSE_STATE_given_UART_TX_CPL_EVT_occurred();
-extern void test_state_machine_no_change_state_from_RESET_STATE_to_RESET_STATE_given_other_events();
-extern void test_state_machine_changes_state_from_RESPONSE_STATE_to_COMMAND_STATE_given_UART_RX_CPL_EVT_occurred();
-extern void test_state_machine_changes_state_from_RESPONSE_STATE_to_RESET_STATE_given_other_events();
-extern void test_state_machine_changes_state_from_COMMAND_STATE_to_RESET_STATE_directly();
-extern void test_dummy();
+extern void test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into_RESET_STATE(void);
+extern void test_state_machine_receives_other_event_will_remain_in_IDLE_STATE(void);
+extern void test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE(void);
+extern void test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE(void);
+extern void test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE(void);
+extern void test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE(void);
 
+
+/*=======Mock Management=====*/
+static void CMock_Init(void)
+{
+  GlobalExpectCount = 0;
+  GlobalVerifyOrder = 0;
+  GlobalOrderError = NULL;
+  mock_functions_Init();
+  mock_callback_Init();
+}
+static void CMock_Verify(void)
+{
+  mock_functions_Verify();
+  mock_callback_Verify();
+}
+static void CMock_Destroy(void)
+{
+  mock_functions_Destroy();
+  mock_callback_Destroy();
+}
 
 /*=======Test Reset Option=====*/
 void resetTest(void);
 void resetTest(void)
 {
+  CMock_Verify();
+  CMock_Destroy();
   tearDown();
+  CMock_Init();
   setUp();
 }
 
@@ -54,15 +81,13 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_state_machine.c");
-  RUN_TEST(test_init_state_machine, 11);
-  RUN_TEST(test_state_machine_no_change_state_from_IDLE_STATE_to_RESET_STATE_given_other_events, 17);
-  RUN_TEST(test_state_machine_changes_state_from_IDLE_STATE_to_RESET_STATE_given_START_EVT_occurred, 23);
-  RUN_TEST(test_state_machine_changes_state_from_RESET_STATE_to_RESPONSE_STATE_given_UART_TX_CPL_EVT_occurred, 29);
-  RUN_TEST(test_state_machine_no_change_state_from_RESET_STATE_to_RESET_STATE_given_other_events, 36);
-  RUN_TEST(test_state_machine_changes_state_from_RESPONSE_STATE_to_COMMAND_STATE_given_UART_RX_CPL_EVT_occurred, 43);
-  RUN_TEST(test_state_machine_changes_state_from_RESPONSE_STATE_to_RESET_STATE_given_other_events, 50);
-  RUN_TEST(test_state_machine_changes_state_from_COMMAND_STATE_to_RESET_STATE_directly, 57);
-  RUN_TEST(test_dummy, 64);
+  RUN_TEST(test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into_RESET_STATE, 16);
+  RUN_TEST(test_state_machine_receives_other_event_will_remain_in_IDLE_STATE, 27);
+  RUN_TEST(test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE, 38);
+  RUN_TEST(test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE, 45);
+  RUN_TEST(test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE, 52);
+  RUN_TEST(test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE, 59);
 
+  CMock_Guts_MemFreeFinal();
   return (UnityEnd());
 }

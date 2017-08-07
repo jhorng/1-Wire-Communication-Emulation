@@ -52,7 +52,7 @@ void masterReadSlot(){
 }
 
 void resetPulse(){
-	uint8_t reset = BYTE0;
+	uint8_t reset = 0xE0;
 
 	huart1.Instance->BRR = 6240;
 
@@ -60,11 +60,11 @@ void resetPulse(){
 }
 
 void presencePulseDetect(){
-	uint8_t presencePulse[2] = {0};
+	uint8_t presencePulse=0;
 
 	huart1.Instance->BRR = 6240;
 
-	HAL_UART_Receive_IT(&huart1, presencePulse, sizeof(presencePulse));
+	HAL_UART_Receive_IT(&huart1, &presencePulse, sizeof(presencePulse));
 }
 
 /*

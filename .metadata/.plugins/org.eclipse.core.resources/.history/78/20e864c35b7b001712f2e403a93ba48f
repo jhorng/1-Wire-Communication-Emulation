@@ -1,0 +1,25 @@
+/*
+ * function.h
+ *
+ *  Created on: Jul 3, 2017
+ *      Author: Prince
+ */
+
+#ifndef FUNCTION_H
+#define FUNCTION_H
+
+#define BYTE0 (uint8_t)0x0
+#define BYTE1 (uint8_t)0xFF
+
+void timerStart(TIM_HandleTypeDef *htim);
+void timerStop(TIM_HandleTypeDef *htim);
+void masterWriteByteWithInterrupt(uint8_t *byte, int dataSize);
+void masterReadSlot();
+void resetPulse();
+void presencePulseDetect(uint8_t presencePulse);
+void searchROM();
+void readROM();
+void skipROM();
+void readPowerSupply();
+
+#endif /* FUNCTION_H */
