@@ -114,7 +114,7 @@ int main(void)
   __HAL_TIM_ENABLE(&htim2);
   HAL_TIM_Base_Start_IT(&htim2);*/
   //timerStart(&htim2);
-  HAL_HalfDuplex_EnableTxRx(&huart1);
+  //HAL_HalfDuplex_EnableTxRx(&huart1);
   bitSearchingFSM(START_EVT);
   /* USER CODE END 2 */
 

@@ -14,8 +14,9 @@ typedef enum{
 	IDLE_STATE,
 	RESET_STATE,
 	RESPONSE_STATE,
-	WAIT_STATE,
-	COMMAND_STATE
+	FINISH_INIT_STATE,
+	COMMAND_STATE,
+	READ_SLOT_STATE
 }State;
 
 typedef struct BitSearchingInfo BitSearchingInfo;
