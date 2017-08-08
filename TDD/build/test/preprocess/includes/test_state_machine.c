@@ -2,5 +2,4 @@
 - unity.h
 - state_machine.h
 - mock_functions.h
-- mock_callback.h
 - uart.h

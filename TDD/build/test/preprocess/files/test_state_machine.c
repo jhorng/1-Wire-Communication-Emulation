@@ -1,5 +1,4 @@
 #include "uart.h"
-#include "mock_callback.h"
 #include "mock_functions.h"
 #include "state_machine.h"
 #include "unity.h"
@@ -29,19 +28,23 @@ void test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into
 
   bsi.state = IDLE_STATE;
 
-  HAL_HalfDuplex_EnableTxRx_CMockExpectAndReturn(19, &huart1, HAL_OK);
+  HAL_HalfDuplex_EnableTxRx_CMockExpectAndReturn(18, &huart1, HAL_OK);
 
-  timerStart_CMockExpect(20, &htim2);
+  timerStart_CMockExpect(19, &htim2);
 
-  HAL_UART_Receive_IT_CMockExpectAndReturn(21, &huart1, &presencePulse, sizeof(presencePulse), HAL_OK);
+  HAL_UART_Receive_IT_CMockExpectAndReturn(20, &huart1, &presencePulse, sizeof(presencePulse), HAL_OK);
 
-  resetPulse_CMockExpect(22);
+  resetPulse_CMockExpect(21);
 
 
 
   bitSearchingFSM(START_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((RESET_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(25), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((RESET_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(24), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -63,7 +66,11 @@ void test_state_machine_receives_other_event_will_remain_in_IDLE_STATE(void){
 
   bitSearchingFSM(UART_TX_CPL_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(36), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(35), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -77,7 +84,11 @@ void test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE(void)
 
   bitSearchingFSM(UART_TX_CPL_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((RESPONSE_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(43), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((RESPONSE_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(42), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -91,7 +102,11 @@ void test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE(void){
 
   bitSearchingFSM(START_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(50), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(49), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -105,7 +120,11 @@ void test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE(v
 
   bitSearchingFSM(UART_RX_CPL_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((FINISH_INIT_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(57), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((FINISH_INIT_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(56), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -119,7 +138,11 @@ void test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE(void){
 
   bitSearchingFSM(UART_TX_CPL_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(64), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(63), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -131,17 +154,21 @@ void test_FINISH_INIT_STATE_receives_TIMEOUT_EVT_will_stop_the_timer_and_send_ou
 
 
 
-  timerStop_CMockExpect(70, &htim2);
+  timerStop_CMockExpect(69, &htim2);
 
-  HAL_UART_Receive_IT_CMockExpectAndReturn(71, &huart1, responsePulse, sizeof(responsePulse), HAL_OK);
+  HAL_UART_Receive_IT_CMockExpectAndReturn(70, &huart1, responsePulse, sizeof(responsePulse), HAL_OK);
 
-  readROM_CMockExpect(72);
+  readROM_CMockExpect(71);
 
 
 
   bitSearchingFSM(TIMEOUT_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((COMMAND_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(75), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((FINISH_INIT_STATE)), (_U_SINT)((bsi.state)), (
+
+ ((void *)0)
+
+ ), (_U_UINT)(74), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -155,52 +182,10 @@ void test_FINISH_INIT_STATE_receives_UART_RX_CPL_EVT_will_go_back_IDLE_STATE(voi
 
   bitSearchingFSM(UART_RX_CPL_EVT);
 
-  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(82), UNITY_DISPLAY_STYLE_INT);
+  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (
 
-}
+ ((void *)0)
 
-
-
-void test_COMMAND_STATE_receives_UART_TX_CPL_EVT_will_send_out_read_time_slot_for_sensor_to_response(void){
-
-  bsi.state = COMMAND_STATE;
-
-
-
-  masterReadSlot_CMockExpect(88);
-
-
-
-  bitSearchingFSM(UART_TX_CPL_EVT);
-
-  UnityAssertEqualNumber((_U_SINT)((READ_SLOT_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(91), UNITY_DISPLAY_STYLE_INT);
-
-}
-
-
-
-void test_COMMAND_STATE_receives_UART_RX_CPL_EVT_will_go_back_to_IDLE_STATE(void){
-
-  bsi.state = COMMAND_STATE;
-
-
-
-  bitSearchingFSM(UART_RX_CPL_EVT);
-
-  UnityAssertEqualNumber((_U_SINT)((IDLE_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(98), UNITY_DISPLAY_STYLE_INT);
-
-}
-
-
-
-void test_READ_SLOT_STATE_will_print_out_the_registration_number_of_sensor_given_any_evt(void){
-
-  bsi.state = READ_SLOT_STATE;
-
-
-
-  bitSearchingFSM(UART_RX_CPL_EVT);
-
-  UnityAssertEqualNumber((_U_SINT)((READ_SLOT_STATE)), (_U_SINT)((bsi.state)), (((void *)0)), (_U_UINT)(105), UNITY_DISPLAY_STYLE_INT);
+ ), (_U_UINT)(81), UNITY_DISPLAY_STYLE_INT);
 
 }

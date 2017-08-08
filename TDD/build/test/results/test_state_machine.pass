@@ -4,45 +4,35 @@
   :file: test_state_machine.c
 :successes:
 - :test: test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into_RESET_STATE
-  :line: 17
+  :line: 16
   :message: ''
 - :test: test_state_machine_receives_other_event_will_remain_in_IDLE_STATE
-  :line: 28
+  :line: 27
   :message: ''
 - :test: test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE
-  :line: 39
+  :line: 38
   :message: ''
 - :test: test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE
-  :line: 46
+  :line: 45
   :message: ''
 - :test: test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE
-  :line: 53
+  :line: 52
   :message: ''
 - :test: test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE
-  :line: 60
+  :line: 59
   :message: ''
 - :test: test_FINISH_INIT_STATE_receives_TIMEOUT_EVT_will_stop_the_timer_and_send_out_the_read_rom_command
-  :line: 67
+  :line: 66
   :message: ''
 - :test: test_FINISH_INIT_STATE_receives_UART_RX_CPL_EVT_will_go_back_IDLE_STATE
-  :line: 78
-  :message: ''
-- :test: test_COMMAND_STATE_receives_UART_TX_CPL_EVT_will_send_out_read_time_slot_for_sensor_to_response
-  :line: 85
-  :message: ''
-- :test: test_COMMAND_STATE_receives_UART_RX_CPL_EVT_will_go_back_to_IDLE_STATE
-  :line: 94
-  :message: ''
-- :test: test_READ_SLOT_STATE_will_print_out_the_registration_number_of_sensor_given_any_evt
-  :line: 101
+  :line: 77
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 11
-  :passed: 11
+  :total: 8
+  :passed: 8
   :failed: 0
   :ignored: 0
 :stdout:
-- 'ID number: '
 - ''

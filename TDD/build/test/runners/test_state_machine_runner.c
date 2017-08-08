@@ -28,7 +28,6 @@
 #include <setjmp.h>
 #include <stdio.h>
 #include "mock_functions.h"
-#include "mock_callback.h"
 
 int GlobalExpectCount;
 int GlobalVerifyOrder;
@@ -45,9 +44,6 @@ extern void test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_
 extern void test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE(void);
 extern void test_FINISH_INIT_STATE_receives_TIMEOUT_EVT_will_stop_the_timer_and_send_out_the_read_rom_command(void);
 extern void test_FINISH_INIT_STATE_receives_UART_RX_CPL_EVT_will_go_back_IDLE_STATE(void);
-extern void test_COMMAND_STATE_receives_UART_TX_CPL_EVT_will_send_out_read_time_slot_for_sensor_to_response(void);
-extern void test_COMMAND_STATE_receives_UART_RX_CPL_EVT_will_go_back_to_IDLE_STATE(void);
-extern void test_READ_SLOT_STATE_will_print_out_the_registration_number_of_sensor_given_any_evt(void);
 
 
 /*=======Mock Management=====*/
@@ -57,17 +53,14 @@ static void CMock_Init(void)
   GlobalVerifyOrder = 0;
   GlobalOrderError = NULL;
   mock_functions_Init();
-  mock_callback_Init();
 }
 static void CMock_Verify(void)
 {
   mock_functions_Verify();
-  mock_callback_Verify();
 }
 static void CMock_Destroy(void)
 {
   mock_functions_Destroy();
-  mock_callback_Destroy();
 }
 
 /*=======Test Reset Option=====*/
@@ -86,17 +79,14 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_state_machine.c");
-  RUN_TEST(test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into_RESET_STATE, 17);
-  RUN_TEST(test_state_machine_receives_other_event_will_remain_in_IDLE_STATE, 28);
-  RUN_TEST(test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE, 39);
-  RUN_TEST(test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE, 46);
-  RUN_TEST(test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE, 53);
-  RUN_TEST(test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE, 60);
-  RUN_TEST(test_FINISH_INIT_STATE_receives_TIMEOUT_EVT_will_stop_the_timer_and_send_out_the_read_rom_command, 67);
-  RUN_TEST(test_FINISH_INIT_STATE_receives_UART_RX_CPL_EVT_will_go_back_IDLE_STATE, 78);
-  RUN_TEST(test_COMMAND_STATE_receives_UART_TX_CPL_EVT_will_send_out_read_time_slot_for_sensor_to_response, 85);
-  RUN_TEST(test_COMMAND_STATE_receives_UART_RX_CPL_EVT_will_go_back_to_IDLE_STATE, 94);
-  RUN_TEST(test_READ_SLOT_STATE_will_print_out_the_registration_number_of_sensor_given_any_evt, 101);
+  RUN_TEST(test_state_machine_receives_START_EVT_will_init_in_IDLE_STATE_and_jump_into_RESET_STATE, 16);
+  RUN_TEST(test_state_machine_receives_other_event_will_remain_in_IDLE_STATE, 27);
+  RUN_TEST(test_RESET_STATE_receives_UART_TX_CPL_EVT_will_jump_to_RESPONSE_STATE, 38);
+  RUN_TEST(test_RESET_STATE_receives_START_EVT_will_go_back_IDLE_STATE, 45);
+  RUN_TEST(test_RESPONSE_STATE_receives_UART_RX_CPL_EVT_will_go_to_FINISH_INIT_STATE, 52);
+  RUN_TEST(test_RESPONSE_STATE_receives_UART_TX_CPL_EVT_will_go_back_IDLE_STATE, 59);
+  RUN_TEST(test_FINISH_INIT_STATE_receives_TIMEOUT_EVT_will_stop_the_timer_and_send_out_the_read_rom_command, 66);
+  RUN_TEST(test_FINISH_INIT_STATE_receives_UART_RX_CPL_EVT_will_go_back_IDLE_STATE, 77);
 
   CMock_Guts_MemFreeFinal();
   return (UnityEnd());

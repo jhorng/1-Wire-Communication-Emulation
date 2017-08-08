@@ -10,9 +10,11 @@ static const char* CMockString_HAL_HalfDuplex_EnableTxRx = "HAL_HalfDuplex_Enabl
 static const char* CMockString_HAL_TIM_Base_Start_IT = "HAL_TIM_Base_Start_IT";
 static const char* CMockString_HAL_UART_Receive_IT = "HAL_UART_Receive_IT";
 static const char* CMockString_Size = "Size";
+static const char* CMockString_bit = "bit";
 static const char* CMockString_htim = "htim";
 static const char* CMockString_huart = "huart";
 static const char* CMockString_masterReadSlot = "masterReadSlot";
+static const char* CMockString_masterWriteSlot = "masterWriteSlot";
 static const char* CMockString_pData = "pData";
 static const char* CMockString_presencePulseDetect = "presencePulseDetect";
 static const char* CMockString_readPowerSupply = "readPowerSupply";
@@ -54,6 +56,14 @@ typedef struct _CMOCK_masterReadSlot_CALL_INSTANCE
   int CallOrder;
 
 } CMOCK_masterReadSlot_CALL_INSTANCE;
+
+typedef struct _CMOCK_masterWriteSlot_CALL_INSTANCE
+{
+  UNITY_LINE_TYPE LineNumber;
+  int CallOrder;
+  uint8_t Expected_bit;
+
+} CMOCK_masterWriteSlot_CALL_INSTANCE;
 
 typedef struct _CMOCK_HAL_UART_Receive_IT_CALL_INSTANCE
 {
@@ -134,6 +144,10 @@ static struct mock_functionsInstance
   CMOCK_masterReadSlot_CALLBACK masterReadSlot_CallbackFunctionPointer;
   int masterReadSlot_CallbackCalls;
   CMOCK_MEM_INDEX_TYPE masterReadSlot_CallInstance;
+  int masterWriteSlot_IgnoreBool;
+  CMOCK_masterWriteSlot_CALLBACK masterWriteSlot_CallbackFunctionPointer;
+  int masterWriteSlot_CallbackCalls;
+  CMOCK_MEM_INDEX_TYPE masterWriteSlot_CallInstance;
   int HAL_UART_Receive_IT_IgnoreBool;
   HAL_StatusTypeDef HAL_UART_Receive_IT_FinalReturn;
   CMOCK_HAL_UART_Receive_IT_CALLBACK HAL_UART_Receive_IT_CallbackFunctionPointer;
@@ -200,6 +214,12 @@ void mock_functions_Verify(void)
   UNITY_TEST_ASSERT(CMOCK_GUTS_NONE == Mock.masterReadSlot_CallInstance, cmock_line, CMockStringCalledLess);
   if (Mock.masterReadSlot_CallbackFunctionPointer != NULL)
     Mock.masterReadSlot_CallInstance = CMOCK_GUTS_NONE;
+  if (Mock.masterWriteSlot_IgnoreBool)
+    Mock.masterWriteSlot_CallInstance = CMOCK_GUTS_NONE;
+  UNITY_SET_DETAIL(CMockString_masterWriteSlot);
+  UNITY_TEST_ASSERT(CMOCK_GUTS_NONE == Mock.masterWriteSlot_CallInstance, cmock_line, CMockStringCalledLess);
+  if (Mock.masterWriteSlot_CallbackFunctionPointer != NULL)
+    Mock.masterWriteSlot_CallInstance = CMOCK_GUTS_NONE;
   if (Mock.HAL_UART_Receive_IT_IgnoreBool)
     Mock.HAL_UART_Receive_IT_CallInstance = CMOCK_GUTS_NONE;
   UNITY_SET_DETAIL(CMockString_HAL_UART_Receive_IT);
@@ -267,6 +287,8 @@ void mock_functions_Destroy(void)
   Mock.timerStop_CallbackCalls = 0;
   Mock.masterReadSlot_CallbackFunctionPointer = NULL;
   Mock.masterReadSlot_CallbackCalls = 0;
+  Mock.masterWriteSlot_CallbackFunctionPointer = NULL;
+  Mock.masterWriteSlot_CallbackCalls = 0;
   Mock.HAL_UART_Receive_IT_CallbackFunctionPointer = NULL;
   Mock.HAL_UART_Receive_IT_CallbackCalls = 0;
   Mock.resetPulse_CallbackFunctionPointer = NULL;
@@ -519,6 +541,64 @@ void masterReadSlot_CMockExpect(UNITY_LINE_TYPE cmock_line)
 void masterReadSlot_StubWithCallback(CMOCK_masterReadSlot_CALLBACK Callback)
 {
   Mock.masterReadSlot_CallbackFunctionPointer = Callback;
+}
+
+void masterWriteSlot(uint8_t bit)
+{
+  UNITY_LINE_TYPE cmock_line = TEST_LINE_NUM;
+  UNITY_SET_DETAIL(CMockString_masterWriteSlot);
+  CMOCK_masterWriteSlot_CALL_INSTANCE* cmock_call_instance = (CMOCK_masterWriteSlot_CALL_INSTANCE*)CMock_Guts_GetAddressFor(Mock.masterWriteSlot_CallInstance);
+  Mock.masterWriteSlot_CallInstance = CMock_Guts_MemNext(Mock.masterWriteSlot_CallInstance);
+  if (Mock.masterWriteSlot_IgnoreBool)
+  {
+    UNITY_CLR_DETAILS();
+    return;
+  }
+  if (Mock.masterWriteSlot_CallbackFunctionPointer != NULL)
+  {
+    Mock.masterWriteSlot_CallbackFunctionPointer(bit, Mock.masterWriteSlot_CallbackCalls++);
+    return;
+  }
+  UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, CMockStringCalledMore);
+  cmock_line = cmock_call_instance->LineNumber;
+  if (cmock_call_instance->CallOrder > ++GlobalVerifyOrder)
+    UNITY_TEST_FAIL(cmock_line, CMockStringCalledEarly);
+  if (cmock_call_instance->CallOrder < GlobalVerifyOrder)
+    UNITY_TEST_FAIL(cmock_line, CMockStringCalledLate);
+  {
+    UNITY_SET_DETAILS(CMockString_masterWriteSlot,CMockString_bit);
+    UNITY_TEST_ASSERT_EQUAL_HEX8(cmock_call_instance->Expected_bit, bit, cmock_line, CMockStringMismatch);
+  }
+  UNITY_CLR_DETAILS();
+}
+
+void CMockExpectParameters_masterWriteSlot(CMOCK_masterWriteSlot_CALL_INSTANCE* cmock_call_instance, uint8_t bit)
+{
+  cmock_call_instance->Expected_bit = bit;
+}
+
+void masterWriteSlot_CMockIgnore(void)
+{
+  Mock.masterWriteSlot_IgnoreBool = (int)1;
+}
+
+void masterWriteSlot_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t bit)
+{
+  CMOCK_MEM_INDEX_TYPE cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_masterWriteSlot_CALL_INSTANCE));
+  CMOCK_masterWriteSlot_CALL_INSTANCE* cmock_call_instance = (CMOCK_masterWriteSlot_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
+  UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, CMockStringOutOfMemory);
+  memset(cmock_call_instance, 0, sizeof(*cmock_call_instance));
+  Mock.masterWriteSlot_CallInstance = CMock_Guts_MemChain(Mock.masterWriteSlot_CallInstance, cmock_guts_index);
+  Mock.masterWriteSlot_IgnoreBool = (int)0;
+  cmock_call_instance->LineNumber = cmock_line;
+  cmock_call_instance->CallOrder = ++GlobalExpectCount;
+  CMockExpectParameters_masterWriteSlot(cmock_call_instance, bit);
+  UNITY_CLR_DETAILS();
+}
+
+void masterWriteSlot_StubWithCallback(CMOCK_masterWriteSlot_CALLBACK Callback)
+{
+  Mock.masterWriteSlot_CallbackFunctionPointer = Callback;
 }
 
 HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef* huart, uint8_t* pData, uint16_t Size)

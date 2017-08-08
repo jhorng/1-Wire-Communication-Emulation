@@ -9,14 +9,17 @@
 UART_HandleTypeDef huart1;
 TIM_HandleTypeDef htim2;
 
-BitSearchingInfo bsi = {IDLE_STATE};
+EventCallback timer2Callback = {NULL, NULL};
+EventCallback uart1Callback = {NULL, NULL};
+
+BitSearchingInfo bsi = {IDLE_STATE, SEARCH_BIT_STATE};
 uint8_t reset = 0xE0;
 uint8_t presencePulse;
 uint8_t responsePulse[100] = {0};
 char regisNum[64] = {0};
 volatile int i, j=0;
 
-void bitSearchingFSM(Event evt){
+int bitSearchingFSM(Event evt){
 	switch(bsi.state){
 	case IDLE_STATE:
 		if(evt == START_EVT){
@@ -47,35 +50,72 @@ void bitSearchingFSM(Event evt){
 			timerStop(&htim2);
 			HAL_UART_Receive_IT(&huart1, responsePulse, sizeof(responsePulse));
 			readROM();
-			bsi.state = COMMAND_STATE;
+			// bsi.state = COMMAND_STATE;
 		}
     else
       bsi.state = IDLE_STATE;
 		break;
-	case COMMAND_STATE:
-		if(evt == UART_TX_CPL_EVT){
-			masterReadSlot();
-			bsi.state = READ_SLOT_STATE;
-		}
-		else
-			bsi.state = IDLE_STATE;
-		break;
-	case READ_SLOT_STATE:
-		for(i=71; i>7; i--){
-			if(responsePulse[i] == 0xf8){
-				regisNum[j] = '0';
-			}
-			else if(responsePulse[i] == 0xff){
-				regisNum[j] = '1';
-			}
-			else{
-				break;
-			}
-			j++;
-		}
-		printf("ID number: %s\n", regisNum);
-		break;
+	// case COMMAND_STATE:
+		// if(evt == UART_TX_CPL_EVT){
+			// masterReadSlot();
+			// bsi.state = READ_SLOT_STATE;
+		// }
+		// else
+			// bsi.state = IDLE_STATE;
+		// break;
+	// case READ_SLOT_STATE:
+		// for(i=71; i>7; i--){
+			// if(responsePulse[i] == 0xf8){
+				// regisNum[j] = '0';
+			// }
+			// else if(responsePulse[i] == 0xff){
+				// regisNum[j] = '1';
+			// }
+			// else{
+				// break;
+			// }
+			// j++;
+		// }
+		// printf("ID number: %s\n", regisNum);
+		// break;
 	default:
 		bsi.state = RESET_STATE;
 	}
 }
+
+int searchRomSM(Event evt){
+  switch(bsi.state){
+  case SEARCH_BIT_STATE:
+    if(evt == UART_TX_CPL_EVT){
+      HAL_UART_Receive_IT(&huart1, responsePulse, sizeof(responsePulse));
+			masterReadSlot();
+			bsi.state = BIT_DIRECTION_STATE;
+		}
+    break;
+  case BIT_DIRECTION_STATE:
+    if(responsePulse[0] == 0xf8 && responsePulse[1] == 0xf8){
+      masterWriteSlot(BYTE0);
+      bsi.state = SEARCH_BIT_STATE;
+    }
+    else if(responsePulse[0] == 0xf8 && responsePulse[1] == 0xff){
+      masterWriteSlot(BYTE0);
+      bsi.state = SEARCH_BIT_STATE;
+    }
+    else if(responsePulse[0] == 0xff && responsePulse[1] == 0xf8){
+      masterWriteSlot(BYTE1);
+      bsi.state = SEARCH_BIT_STATE;
+    }
+    else{
+      bsi.state = SEARCH_BIT_STATE;
+    }
+    break;
+  case SEARCH_DONE_STATE:
+    return 1;
+    break;
+  default:
+    bsi.state = SEARCH_BIT_STATE;
+  }
+}
+
+
+
