@@ -31,7 +31,7 @@ void masterTransmitReceive(int txRx, uint8_t *pData, int dataSize){
     HAL_UART_Transmit_IT(&huart1, pData, dataSize);
   }
   else{
-    HAL_UART_Receive_IT(&huart1, pData, dataSize);
+    HAL_UART_Receive_IT(&huart1, pData, datatSize);
   }
 }
 

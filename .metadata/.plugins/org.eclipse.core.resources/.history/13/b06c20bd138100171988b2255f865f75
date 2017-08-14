@@ -52,7 +52,7 @@ void bitSearchingFSM(Event evt){
 	case FINISH_INIT_STATE:
 		if(evt == TIMEOUT_EVT){
 			timerStop(&htim2);
-			masterTransmitReceive(RECEIVE, responsePulse, sizeof(responsePulse));
+      masterTransmitReceive(RECEIVE, responsePulse, sizeof(responsePulse));
 			//HAL_UART_Receive_IT(&huart1, responsePulse, sizeof(responsePulse));
 			//searchROM();
 			readROM();

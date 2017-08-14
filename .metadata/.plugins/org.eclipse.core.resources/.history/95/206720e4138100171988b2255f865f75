@@ -24,14 +24,14 @@ void timerStop(TIM_HandleTypeDef *htim){
 	HAL_TIM_Base_Stop_IT(htim);
 }
 
-void masterTransmitReceive(int txRx, uint8_t *pData, int dataSize){
+void masterTransmitReceive(int txRx, uint8_t *pData, int datatSize){
 	huart1.Instance->BRR = 480;
   
   if(txRx == TRANSMIT){
     HAL_UART_Transmit_IT(&huart1, pData, dataSize);
   }
   else{
-    HAL_UART_Receive_IT(&huart1, pData, dataSize);
+    HAL_UART_Receive_IT(&huart1, pData, datatSize);
   }
 }
 
