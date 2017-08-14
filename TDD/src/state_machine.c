@@ -49,35 +49,15 @@ int bitSearchingFSM(Event evt){
 		if(evt == TIMEOUT_EVT){
 			timerStop(&htim2);
 			HAL_UART_Receive_IT(&huart1, responsePulse, sizeof(responsePulse));
-			readROM();
-			// bsi.state = COMMAND_STATE;
+			searchROM();
 		}
     else
       bsi.state = IDLE_STATE;
 		break;
-	// case COMMAND_STATE:
-		// if(evt == UART_TX_CPL_EVT){
-			// masterReadSlot();
-			// bsi.state = READ_SLOT_STATE;
-		// }
-		// else
-			// bsi.state = IDLE_STATE;
-		// break;
-	// case READ_SLOT_STATE:
-		// for(i=71; i>7; i--){
-			// if(responsePulse[i] == 0xf8){
-				// regisNum[j] = '0';
-			// }
-			// else if(responsePulse[i] == 0xff){
-				// regisNum[j] = '1';
-			// }
-			// else{
-				// break;
-			// }
-			// j++;
-		// }
-		// printf("ID number: %s\n", regisNum);
-		// break;
+  case COMMAND_STATE:
+    if(evt == UART_TX_CPL_EVT){
+      searchRomSM(UART_TX_CPL_EVT);
+    }
 	default:
 		bsi.state = RESET_STATE;
 	}
