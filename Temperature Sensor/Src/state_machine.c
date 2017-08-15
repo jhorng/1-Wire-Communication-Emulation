@@ -1,9 +1,10 @@
 /*
- * state_machine.c
+ * owState_machine.c
  *
  *  Created on: Jul 3, 2017
- *      Author: Prince
+ *      Author: Jaan Horng
  */
+ 
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -12,77 +13,104 @@
 #include "function.h"
 #include "uart.h"
 
-//extern TIM_HandleTypeDef htim2;
-//extern UART_HandleTypeDef huart1;
-
-BitSearchingInfo bsi = {IDLE_STATE};
-//uint8_t reset = 0xE0;
+OneWireInfo owInfo = {IDLE_STATE};
 uint8_t presencePulse;
 uint8_t responsePulse[100] = {0};
 char regisNum[64] = {0};
 volatile int i, j=0;
 
-void bitSearchingFSM(Event evt){
-	switch(bsi.state){
+void logSystemError(char *errMessage){
+  printf("%s\n", errMessage);
+}
+
+int oneWireSM(Event evt){
+	switch(owInfo.owState){
 	case IDLE_STATE:
-		if(evt == START_EVT){
-			HAL_HalfDuplex_EnableTxRx();
-			timerStart();
-			masterTransmitReceive(RECEIVE, &presencePulse, sizeof(presencePulse));
-			resetPulse();
-			bsi.state = RESET_STATE;
-		}
+		switch(evt){
+      case START_EVT:
+        halfDuplex_EnableTxRx();
+        timerStart();
+        // owReceive(&presencePulse, sizeof(presencePulse));
+        resetPulse();
+        owInfo.owState = RESET_STATE;
+        return 1;
+      default:
+        logSystemError("Received an unexpected event in oneWireSM::IDLE_STATE");
+        return 1;
+    }
 		break;
+    
 	case RESET_STATE:
-		if(evt == UART_TX_CPL_EVT){
-			bsi.state = RESPONSE_STATE;
-		}
-		else{
-			bsi.state = IDLE_STATE;
-		}
+    switch(evt){
+      case UART_RX_CPL_EVT:
+        owInfo.owState = RESPONSE_STATE;
+        return 1;
+      case TIMEOUT_EVT:
+        logSystemError("Timer has timeout before UART has received the data");
+        owInfo.owState = IDLE_STATE;
+        return 1;
+      default:
+        logSystemError("Received an unexpected event in oneWireSM::RESET_STATE");
+        owInfo.owState = IDLE_STATE;
+        return 1;
+    }
 		break;
+    
 	case RESPONSE_STATE:
-		if(evt == UART_RX_CPL_EVT){
-			bsi.state = FINISH_INIT_STATE;
-		}
-		else
-			bsi.state = IDLE_STATE;
+    switch(evt){
+      case TIMEOUT_EVT:
+        timerStop();
+        owReceive(responsePulse, sizeof(responsePulse));
+        readROM();
+        owInfo.owState = COMMAND_STATE;
+        return 1;
+      default:
+        logSystemError("Received an unexpected event in oneWireSM::RESPONSE_STATE");
+        owInfo.owState = IDLE_STATE;
+        return 1;
+    }
 		break;
-	case FINISH_INIT_STATE:
-		if(evt == TIMEOUT_EVT){
-			timerStop();
-			masterTransmitReceive(RECEIVE, responsePulse, sizeof(responsePulse));
-			//searchROM();
-			readROM();
-			bsi.state = COMMAND_STATE;
-		}
-    else
-      bsi.state = IDLE_STATE;
-		break;
+    
 	case COMMAND_STATE:
-		if(evt == UART_TX_CPL_EVT){
-			masterReadSlot();
-			bsi.state = READ_SLOT_STATE;
+    switch(evt){
+      case UART_RX_CPL_EVT:
+        owReadSlot();
+        owInfo.owState = READ_SLOT_STATE;
+        return 1;;
+      default:
+        logSystemError("Received an unexpected event in oneWireSM::COMMAND_STATE");
+        owInfo.owState = IDLE_STATE;
+        return 1;
 		}
-		else
-			bsi.state = IDLE_STATE;
 		break;
+    
 	case READ_SLOT_STATE:
-		for(i=71; i>7; i--){
-			if(responsePulse[i] == 0xf8){
-				regisNum[j] = '0';
-			}
-			else if(responsePulse[i] == 0xff){
-				regisNum[j] = '1';
-			}
-			else{
-				break;
-			}
-			j++;
-		}
-		printf("ID number: %s\n", regisNum);
+		switch(evt){
+      case UART_RX_CPL_EVT:
+        for(i=71; i>7; i--){
+          if(responsePulse[i] == 0xf8){
+            regisNum[j] = '0';
+          }
+          else if(responsePulse[i] == 0xff){
+            regisNum[j] = '1';
+          }
+          else{
+            break;
+          }
+          j++;
+        }
+        printf("ID number: %s\n", regisNum);
+        break;
+      default:
+        logSystemError("Received an unexpected event in oneWireSM::READ_SLOT_STATE");
+    }
+    owInfo.owState = IDLE_STATE;
+    return 1;
 		break;
+    
 	default:
-		bsi.state = RESET_STATE;
+    logSystemError("oneWireSM has received an unexpected state");
+		owInfo.owState = IDLE_STATE;
 	}
+  return 0;
 }

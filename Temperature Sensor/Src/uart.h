@@ -11,6 +11,6 @@
 //#include "stm32f1xx_hal.h"
 
 //HAL_StatusTypeDef HAL_HalfDuplex_EnableTxRx();
-void HAL_HalfDuplex_EnableTxRx();
+void halfDuplex_EnableTxRx();
 
 #endif /* UART_H_ */

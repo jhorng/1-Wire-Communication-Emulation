@@ -9,7 +9,7 @@
 
 extern UART_HandleTypeDef huart1;
 
-void HAL_HalfDuplex_EnableTxRx(){
+void halfDuplex_EnableTxRx(){
   /* Process Locked */
   //__HAL_LOCK(&huart1);
 

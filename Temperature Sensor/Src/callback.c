@@ -10,13 +10,13 @@
 #include "event.h"
 
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
-	bitSearchingFSM(UART_TX_CPL_EVT);
+	oneWireSM(UART_TX_CPL_EVT);
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-	bitSearchingFSM(UART_RX_CPL_EVT);
+	oneWireSM(UART_RX_CPL_EVT);
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	bitSearchingFSM(TIMEOUT_EVT);
+	oneWireSM(TIMEOUT_EVT);
 }

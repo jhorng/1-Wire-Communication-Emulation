@@ -16,16 +16,18 @@
 #define RECEIVE   0
 #define TRANSMIT  1
 
-void HAL_HalfDuplex_EnableTxRx();
+void halfDuplex_EnableTxRx();
 void timerStart();
 void timerStop();
-void masterTransmitReceive(int txRx, uint8_t *pData, int dataSize);
-void masterReadSlot();
+void owTransmit(uint8_t *pData, int dataSize);
+void owReceive(uint8_t *pData, int dataSize);
 void resetPulse();
 void presencePulseDetect();
 void searchROM();
 void readROM();
 void skipROM();
 void readPowerSupply();
+void owReadSlot();
+// void logSystemError(char *errMessage);
 
 #endif /* HARDWARE_INTERFACE_H_ */

@@ -14,16 +14,16 @@ typedef enum{
 	IDLE_STATE,
 	RESET_STATE,
 	RESPONSE_STATE,
-	FINISH_INIT_STATE,
 	COMMAND_STATE,
 	READ_SLOT_STATE
-}State;
+}OneWireState;
 
-typedef struct BitSearchingInfo BitSearchingInfo;
-struct BitSearchingInfo{
-	State state;
+typedef struct OneWireInfo OneWireInfo;
+struct OneWireInfo{
+	OneWireState owState;  
 };
 
-void bitSearchingFSM(Event evt);
+int oneWireSM(Event evt);
+void logSystemError(char *errMessage);
 
 #endif /* STATE_MACHINE_H */
