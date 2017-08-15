@@ -2,31 +2,32 @@
  * function.c
  *
  *  Created on: Jul 3, 2017
- *      Author: Prince
+ *      Author: Jaan Horng
  */
 #include <stdlib.h>
 #include "stm32f1xx_hal.h"
 #include "function.h"
 
 extern UART_HandleTypeDef huart1;
+extern TIM_HandleTypeDef htim2;
 
-void timerStart(TIM_HandleTypeDef *htim){
+void timerStart(){
 	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_RESET);
-	htim->Instance->CNT = 0;
-	__HAL_TIM_CLEAR_FLAG(htim, TIM_FLAG_UPDATE);
-	HAL_TIM_Base_Start_IT(htim);
+	htim2.Instance->CNT = 0;
+	__HAL_TIM_CLEAR_FLAG(&htim2, TIM_FLAG_UPDATE);
+	HAL_TIM_Base_Start_IT(&htim2);
 }
 
-void timerStop(TIM_HandleTypeDef *htim){
+void timerStop(){
 	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_RESET);
-	HAL_TIM_Base_Stop_IT(htim);
+	HAL_TIM_Base_Stop_IT(&htim2);
 }
 
 void masterTransmitReceive(int txRx, uint8_t *pData, int dataSize){
 	huart1.Instance->BRR = 480;
-  
+
   if(txRx == TRANSMIT){
     HAL_UART_Transmit_IT(&huart1, pData, dataSize);
   }
@@ -107,3 +108,4 @@ void readPowerSupply(){
 
 	masterTransmitReceive(TRANSMIT, readPowSupCommand, sizeof(readPowSupCommand));
 }
+

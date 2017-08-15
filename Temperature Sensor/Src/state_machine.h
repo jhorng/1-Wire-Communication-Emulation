@@ -2,7 +2,7 @@
  * state_machine.h
  *
  *  Created on: Jul 3, 2017
- *      Author: Prince
+ *      Author: Jaan Horng
  */
 
 #ifndef STATE_MACHINE_H

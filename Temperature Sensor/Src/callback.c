@@ -8,7 +8,6 @@
 #include "stm32f1xx_hal.h"
 #include "state_machine.h"
 #include "event.h"
-#include "function.h"
 
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
 	bitSearchingFSM(UART_TX_CPL_EVT);

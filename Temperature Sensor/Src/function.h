@@ -2,7 +2,7 @@
  * function.h
  *
  *  Created on: Jul 3, 2017
- *      Author: Prince
+ *      Author: Jaan Horng
  */
 
 #ifndef FUNCTION_H
@@ -14,8 +14,8 @@
 #define RECEIVE   0
 #define TRANSMIT  1
 
-void timerStart(TIM_HandleTypeDef *htim);
-void timerStop(TIM_HandleTypeDef *htim);
+void timerStart();
+void timerStop();
 void masterTransmitReceive(int txRx, uint8_t *pData, int dataSize);
 void masterReadSlot();
 void resetPulse();

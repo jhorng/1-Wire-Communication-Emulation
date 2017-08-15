@@ -1,0 +1,13 @@
+/*
+ * hardware_interface.h
+ *
+ *  Created on: Aug 15, 2017
+ *      Author: TARUC
+ */
+
+#ifndef HARDWARE_INTERFACE_H_
+#define HARDWARE_INTERFACE_H_
+
+
+
+#endif /* HARDWARE_INTERFACE_H_ */
