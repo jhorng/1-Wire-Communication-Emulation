@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Temperature Sensor/Src/timer.c&apos; to &apos;callback.c&apos;" description="Rename resource &apos;timer.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/timer.c" name="callback.c" stamp="1500978508358" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Temperature Sensor/Inc/timer.h&apos; to &apos;callback.h&apos;" description="Rename resource &apos;timer.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/timer.h" name="callback.h" stamp="1500978520650" updateReferences="true"/>
+</session>

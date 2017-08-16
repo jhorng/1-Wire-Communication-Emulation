@@ -1,0 +1,8 @@
+#for stm32 workbench 
+Temperature Sensor/Debug/*
+!Temperature Sensor/Debug/objects.mk
+
+#for TDD
+Temperature Sensor/build/*
+!Temperature Sensor/build/Readme.txt
+

@@ -2,20 +2,25 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="HAL_UART_IRQHandler" key="selection"/>
+		<item value="owTransmit" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="owSend"/>
+			<item value="state"/>
+			<item value="masterTransmitReceive"/>
 			<item value="HAL_UART_IRQHandler"/>
 			<item value="NVIC_enable"/>
 			<item value="Hal_"/>
 			<item value="searchCommand"/>
 			<item value="slot"/>
-			<item value="masterWriteSlot"/>
 		</list>
 		<list key="replacehistory">
+			<item value="owTransmit"/>
+			<item value="owState"/>
+			<item value="owSend"/>
 			<item value="searchRom"/>
 			<item value="byte"/>
 			<item value="masterWriteByte"/>
