@@ -9,14 +9,23 @@
 #include "state_machine.h"
 #include "event.h"
 
+/*
+ * @brief This is the callback for non-blocking mode of uart when data transmission has completed.
+ */
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
 	oneWireSM(UART_TX_CPL_EVT);
 }
 
+/*
+ * @brief This is the callback for non-blocking mode of uart when data reception has completed.
+ */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	oneWireSM(UART_RX_CPL_EVT);
 }
 
+/*
+ * @brief This is the callback for non-blocking mode of timer when the assigned timing period has elapsed.
+ */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	oneWireSM(TIMEOUT_EVT);
 }

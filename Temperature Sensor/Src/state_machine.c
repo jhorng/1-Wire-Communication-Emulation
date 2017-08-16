@@ -15,14 +15,25 @@
 
 OneWireInfo owInfo = {IDLE_STATE};
 uint8_t presencePulse;
-uint8_t responsePulse[100] = {0};
+uint8_t responsePulse[72] = {0};
 char regisNum[64] = {0};
 volatile int i, j=0;
 
+/*
+ * @brief	To print out the error message for
+ * 			the respective state.
+ */
 void logSystemError(char *errMessage){
   printf("%s\n", errMessage);
 }
 
+/*
+ * @brief	This state machine will talk to the
+ * 			sensor and obtain the registration number.
+ * @param 	evt: Event received from the user as starter
+ * 				 and callbacks.
+ * @retval	status
+ */
 int oneWireSM(Event evt){
 	switch(owInfo.owState){
 	case IDLE_STATE:
@@ -30,7 +41,7 @@ int oneWireSM(Event evt){
       case START_EVT:
         halfDuplex_EnableTxRx();
         timerStart();
-        // owReceive(&presencePulse, sizeof(presencePulse));
+        owReceive(&presencePulse, sizeof(presencePulse));
         resetPulse();
         owInfo.owState = RESET_STATE;
         return 1;
@@ -41,12 +52,15 @@ int oneWireSM(Event evt){
 		break;
     
 	case RESET_STATE:
-    switch(evt){
+	  switch(evt){
+      case UART_TX_CPL_EVT:
+        owInfo.owState = RESET_STATE;	// buffer purpose for presence pulse to be received.
+        return 1;
       case UART_RX_CPL_EVT:
         owInfo.owState = RESPONSE_STATE;
         return 1;
       case TIMEOUT_EVT:
-        logSystemError("Timer has timeout before UART has received the data");
+        logSystemError("Timer has timeout before UART has received the data::RESET_STATE");
         owInfo.owState = IDLE_STATE;
         return 1;
       default:
@@ -73,10 +87,10 @@ int oneWireSM(Event evt){
     
 	case COMMAND_STATE:
     switch(evt){
-      case UART_RX_CPL_EVT:
-        owReadSlot();
+      case UART_TX_CPL_EVT:	// Read slot should send right after the rom command.
+        owReadSlot();		// Thus, command state should send read slot to sensor when command state receives UART_TX_CPL_EVT.
         owInfo.owState = READ_SLOT_STATE;
-        return 1;;
+        return 1;
       default:
         logSystemError("Received an unexpected event in oneWireSM::COMMAND_STATE");
         owInfo.owState = IDLE_STATE;
@@ -103,8 +117,8 @@ int oneWireSM(Event evt){
         break;
       default:
         logSystemError("Received an unexpected event in oneWireSM::READ_SLOT_STATE");
+        owInfo.owState = IDLE_STATE;
     }
-    owInfo.owState = IDLE_STATE;
     return 1;
 		break;
     
