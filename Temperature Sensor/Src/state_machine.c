@@ -10,7 +10,8 @@
 #include <stdint.h>
 #include "state_machine.h"
 #include "event.h"
-#include "function.h"
+//#include "function.h"
+#include "hardware_interface.h"
 #include "uart.h"
 
 OneWireInfo owInfo = {IDLE_STATE};
@@ -40,7 +41,7 @@ int oneWireSM(Event evt){
 		switch(evt){
       case START_EVT:
         halfDuplex_EnableTxRx();
-        timerStart();
+        timerStart(_1920us);
         owReceive(&presencePulse, sizeof(presencePulse));
         resetPulse();
         owInfo.owState = RESET_STATE;
@@ -57,9 +58,12 @@ int oneWireSM(Event evt){
         owInfo.owState = RESET_STATE;	// buffer purpose for presence pulse to be received.
         return 1;
       case UART_RX_CPL_EVT:
+    	timerStop();
+    	timerStart(_200us);
         owInfo.owState = RESPONSE_STATE;
         return 1;
       case TIMEOUT_EVT:
+    	timerStop();
         logSystemError("Timer has timeout before UART has received the data::RESET_STATE");
         owInfo.owState = IDLE_STATE;
         return 1;

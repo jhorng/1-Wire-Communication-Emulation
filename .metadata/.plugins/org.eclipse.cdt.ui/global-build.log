@@ -1705,3 +1705,1385 @@ arm-none-eabi-size "Temperature Sensor.elf"
 21:20:53 **** Incremental Build of configuration Debug for project Temperature Sensor ****
 make all 
 make: Nothing to be done for `all'.
+15:35:28 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+16:14:57 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+16:29:54 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13088	    116	   2036	  15240	   3b88	Temperature Sensor.elf
+ 
+17:06:25 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+../Src/state_machine.c: In function 'oneWireSM':
+../Src/state_machine.c:43:9: error: too few arguments to function 'timerStart'
+         timerStart();
+         ^
+In file included from ../Src/state_machine.c:13:0:
+../Src/function.h:17:6: note: declared here
+ void timerStart(int period);
+      ^
+make: *** [Src/state_machine.o] Error 1
+17:06:37 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+../Src/state_machine.c: In function 'oneWireSM':
+../Src/state_machine.c:43:9: error: too few arguments to function 'timerStart'
+         timerStart();
+         ^
+In file included from ../Src/state_machine.c:13:0:
+../Src/function.h:17:6: note: declared here
+ void timerStart(int period);
+      ^
+make: *** [Src/state_machine.o] Error 1
+17:07:52 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Src/uart.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" -o "Src/uart.o" "../Src/uart.c"
+Finished building: ../Src/uart.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13088	    116	   2036	  15240	   3b88	Temperature Sensor.elf
+ 
+17:08:15 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:09:40 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13092	    116	   2036	  15244	   3b8c	Temperature Sensor.elf
+ 
+17:09:44 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:14:18 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Src/uart.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" -o "Src/uart.o" "../Src/uart.c"
+Finished building: ../Src/uart.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13092	    116	   2036	  15244	   3b8c	Temperature Sensor.elf
+ 
+17:14:59 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:19:22 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building file: ../Src/stm32f1xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" -o "Src/stm32f1xx_hal_msp.o" "../Src/stm32f1xx_hal_msp.c"
+Finished building: ../Src/stm32f1xx_hal_msp.c
+ 
+Building file: ../Src/stm32f1xx_it.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" -o "Src/stm32f1xx_it.o" "../Src/stm32f1xx_it.c"
+Finished building: ../Src/stm32f1xx_it.c
+ 
+Building file: ../Src/system_stm32f1xx.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" -o "Src/system_stm32f1xx.o" "../Src/system_stm32f1xx.c"
+Finished building: ../Src/system_stm32f1xx.c
+ 
+Building file: ../Src/uart.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" -o "Src/uart.o" "../Src/uart.c"
+Finished building: ../Src/uart.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+Finished building: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13108	    116	   2036	  15260	   3b9c	Temperature Sensor.elf
+ 
+17:19:46 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:19:53 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13100	    116	   2036	  15252	   3b94	Temperature Sensor.elf
+ 
+17:19:57 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:22:15 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13100	    116	   2036	  15252	   3b94	Temperature Sensor.elf
+ 
+17:22:29 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13104	    116	   2036	  15256	   3b98	Temperature Sensor.elf
+ 
+17:22:38 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:23:08 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:23:58 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13104	    116	   2036	  15256	   3b98	Temperature Sensor.elf
+ 
+17:24:07 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:29:17 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13140	    116	   2036	  15292	   3bbc	Temperature Sensor.elf
+ 
+17:29:35 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:31:56 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13140	    116	   2036	  15292	   3bbc	Temperature Sensor.elf
+ 
+17:34:07 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:34:11 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:34:49 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:35:18 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:36:54 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:42:51 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:42:55 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:45:43 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:45:48 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:46:21 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:46:29 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:46:33 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:50:12 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+../Src/state_machine.c: In function 'oneWireSM':
+../Src/state_machine.c:45:20: error: '_1440us' undeclared (first use in this function)
+         timerStart(_1440us);
+                    ^
+../Src/state_machine.c:45:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/state_machine.o] Error 1
+17:50:54 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+../Src/state_machine.c: In function 'oneWireSM':
+../Src/state_machine.c:45:20: error: '_17000us' undeclared (first use in this function)
+         timerStart(_17000us);
+                    ^
+../Src/state_machine.c:45:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/state_machine.o] Error 1
+17:51:05 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:51:08 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:52:07 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:52:10 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:57:14 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/callback.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/callback.d" -MT"Src/callback.o" -o "Src/callback.o" "../Src/callback.c"
+Finished building: ../Src/callback.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13160	    116	   2036	  15312	   3bd0	Temperature Sensor.elf
+ 
+17:57:19 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+17:59:39 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    116	   2036	  15316	   3bd4	Temperature Sensor.elf
+ 
+17:59:45 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:00:41 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13152	    116	   2036	  15304	   3bc8	Temperature Sensor.elf
+ 
+18:00:46 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:01:29 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13108	    116	   2036	  15260	   3b9c	Temperature Sensor.elf
+ 
+18:01:34 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:17:06 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13108	    116	   2036	  15260	   3b9c	Temperature Sensor.elf
+ 
+18:17:17 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13112	    116	   2036	  15264	   3ba0	Temperature Sensor.elf
+ 
+18:17:27 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:19:19 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13124	    116	   2036	  15276	   3bac	Temperature Sensor.elf
+ 
+18:19:23 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:20:11 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13124	    116	   2036	  15276	   3bac	Temperature Sensor.elf
+ 
+18:20:15 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:29:15 **** Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:29:26 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:30:04 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13124	    116	   2036	  15276	   3bac	Temperature Sensor.elf
+ 
+18:30:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:31:10 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13124	    116	   2036	  15276	   3bac	Temperature Sensor.elf
+ 
+18:31:14 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:33:00 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13120	    116	   2036	  15272	   3ba8	Temperature Sensor.elf
+ 
+18:33:10 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:37:05 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13116	    116	   2036	  15268	   3ba4	Temperature Sensor.elf
+ 
+18:37:09 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:39:18 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:41:15 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:79:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13116	    116	   2036	  15268	   3ba4	Temperature Sensor.elf
+ 
+18:41:25 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:43:32 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/function.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/function.d" -MT"Src/function.o" -o "Src/function.o" "../Src/function.c"
+Finished building: ../Src/function.c
+ 
+Building file: ../Src/hardware_interface.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/hardware_interface.d" -MT"Src/hardware_interface.o" -o "Src/hardware_interface.o" "../Src/hardware_interface.c"
+Finished building: ../Src/hardware_interface.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13116	    116	   2036	  15268	   3ba4	Temperature Sensor.elf
+ 
+18:43:41 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.
+18:47:09 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:80:2: warning: implicit declaration of function 'initialise_monitor_handles' [-Wimplicit-function-declaration]
+  initialise_monitor_handles();
+  ^
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/state_machine.c
+Invoking: MCU GCC Compiler
+C:\Users\Prince\Desktop\1-Wire-Communication-Emulation\Temperature Sensor\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Drivers/CMSIS/Include" -I"C:/Users/Prince/Desktop/1-Wire-Communication-Emulation/Temperature Sensor/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/state_machine.d" -MT"Src/state_machine.o" -o "Src/state_machine.o" "../Src/state_machine.c"
+Finished building: ../Src/state_machine.c
+ 
+Building target: Temperature Sensor.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -specs=rdimon.specs -lc -lrdimon -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Temperature Sensor.elf" @"objects.list"   -lm
+Finished building target: Temperature Sensor.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Temperature Sensor.elf" "Temperature Sensor.bin"
+arm-none-eabi-size "Temperature Sensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13116	    116	   2036	  15268	   3ba4	Temperature Sensor.elf
+ 
+18:47:16 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+make all 
+make: Nothing to be done for `all'.

@@ -16,8 +16,13 @@
 #define RECEIVE   0
 #define TRANSMIT  1
 
-void halfDuplex_EnableTxRx();
-void timerStart();
+#define _200us	200
+#define _480us	480
+#define _960us	960
+#define _1440us 1440
+#define _1920us	1920
+
+void timerStart(int period);
 void timerStop();
 void owTransmit(uint8_t *pData, int dataSize);
 void owReceive(uint8_t *pData, int dataSize);
@@ -28,6 +33,5 @@ void readROM();
 void skipROM();
 void readPowerSupply();
 void owReadSlot();
-// void logSystemError(char *errMessage);
 
 #endif /* HARDWARE_INTERFACE_H_ */

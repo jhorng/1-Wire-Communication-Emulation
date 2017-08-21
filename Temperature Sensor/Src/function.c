@@ -7,7 +7,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "stm32f1xx_hal.h"
-#include "function.h"
+//#include "function.h"
+#include "hardware_interface.h"
 
 extern UART_HandleTypeDef huart1;
 extern TIM_HandleTypeDef htim2;
@@ -15,17 +16,22 @@ extern TIM_HandleTypeDef htim2;
 /*
  * @brief	To start the timer2.
  */
-void timerStart(){
+void timerStart(int period){
+	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_SET);
+	htim2.Instance->ARR = period-1;
 	htim2.Instance->CNT = 0;
 	__HAL_TIM_CLEAR_FLAG(&htim2, TIM_FLAG_UPDATE);
 	HAL_TIM_Base_Start_IT(&htim2);
+	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_RESET);
 }
 
 /*
  * @brief	To stop the timer2.
  */
 void timerStop(){
+	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_SET);
 	HAL_TIM_Base_Stop_IT(&htim2);
+	HAL_GPIO_WritePin(amberLed_GPIO_Port, amberLed_Pin, GPIO_PIN_RESET);
 }
 
 /*
