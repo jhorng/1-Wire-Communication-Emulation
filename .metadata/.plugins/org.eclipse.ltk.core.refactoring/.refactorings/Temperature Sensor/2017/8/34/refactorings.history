@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Temperature Sensor/Src/state_machine.c&apos; to &apos;ow_state_machine.c&apos;" description="Rename resource &apos;state_machine.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/state_machine.c" name="ow_state_machine.c" stamp="1503368602935" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Temperature Sensor/Src/state_machine.h&apos; to &apos;ow_state_machine.h&apos;" description="Rename resource &apos;state_machine.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/state_machine.h" name="ow_state_machine.h" stamp="1503369149429" updateReferences="true"/>
+</session>

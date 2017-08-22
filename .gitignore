@@ -1,8 +1,8 @@
-#for stm32 workbench 
+#for SW4STM32 
 Temperature Sensor/Debug/*
-!Temperature Sensor/Debug/objects.mk
+!Temperature Sensor/Debug/*.mk
 
-#for TDD
+#for ceedling (Test)
 Temperature Sensor/build/*
 !Temperature Sensor/build/Readme.txt
 

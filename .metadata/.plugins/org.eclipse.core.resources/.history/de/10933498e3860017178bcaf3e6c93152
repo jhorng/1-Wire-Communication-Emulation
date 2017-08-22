@@ -1,0 +1,10 @@
+Src/state_machine.o: ../Src/state_machine.c ../Src/state_machine.h \
+ ../Src/event.h ../Src/hardware_interface.h ../Src/uart.h
+
+../Src/state_machine.h:
+
+../Src/event.h:
+
+../Src/hardware_interface.h:
+
+../Src/uart.h:
