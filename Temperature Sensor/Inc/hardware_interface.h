@@ -33,6 +33,6 @@ void searchROM();
 void readROM();
 void skipROM();
 void readPowerSupply();
-void owReadSlot();
+void owReadSlot(int size);
 
 #endif /* HARDWARE_INTERFACE_H_ */

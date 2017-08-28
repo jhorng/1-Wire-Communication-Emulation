@@ -10,6 +10,10 @@
 
 #include "event.h"
 
+#define _1Byte 1
+#define _2Bytes 2
+#define _64Bytes 64
+
 typedef enum{
   COMMAND_STATE,
   BIT_SEARCH_STATE,

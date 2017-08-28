@@ -18,7 +18,7 @@ extern EventCallback uart1Tx;
 extern EventCallback uart1Rx;
 extern EventCallback timer2;
 uint8_t presencePulse;
-uint8_t responsePulse[72] = {0};
+// uint8_t responsePulse[72] = {0};
 char regisNum[64] = {0};
 volatile int i, j=0;
 
