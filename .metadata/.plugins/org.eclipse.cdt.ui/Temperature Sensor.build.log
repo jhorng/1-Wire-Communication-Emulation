@@ -1,6 +1,6 @@
-21:20:53 **** Incremental Build of configuration Debug for project Temperature Sensor ****
+22:42:38 **** Incremental Build of configuration Debug for project Temperature Sensor ****
 make all 
 make: Nothing to be done for `all'.
 
-21:20:53 Build Finished (took 431ms)
+22:42:38 Build Finished (took 399ms)
 

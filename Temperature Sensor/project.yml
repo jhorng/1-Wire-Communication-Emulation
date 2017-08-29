@@ -28,6 +28,8 @@
     - -:test/support
   :source:
     - src/**
+  :include:
+    - inc/**
   :support:
     - test/support
 

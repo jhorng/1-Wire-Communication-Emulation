@@ -10,8 +10,7 @@
 #include <stdint.h>
 #include "state_machine.h"
 #include "event.h"
-#include "function.h"
-#include "uart.h"
+#include "hardware_interface.h"
 
 OneWireInfo owInfo = {IDLE_STATE};
 uint8_t presencePulse;

@@ -42,9 +42,8 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "state_machine.h"
-#include "uart.h"
 #include "event.h"
-#include "function.h"
+#include "hardware_interface.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_adrq0IJiEeer0p9_YntAxw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_adrq0YJiEeer0p9_YntAxw" bindingContexts="_adtgT4JiEeer0p9_YntAxw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;Temperature Sensor/Src/main.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.asm.AsmEditor&quot; name=&quot;startup_stm32f103xb.s&quot; tooltip=&quot;Temperature Sensor/startup/startup_stm32f103xb.s&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/startup/startup_stm32f103xb.s&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;state_machine.c&quot; tooltip=&quot;Temperature Sensor/Src/state_machine.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/state_machine.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f1xx_hal_uart.c&quot; tooltip=&quot;Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;function.c&quot; tooltip=&quot;Temperature Sensor/Src/function.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/function.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;uart.c&quot; tooltip=&quot;Temperature Sensor/Src/uart.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/uart.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;callback.c&quot; tooltip=&quot;Temperature Sensor/Src/callback.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/callback.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;event.h&quot; tooltip=&quot;Temperature Sensor/Src/event.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/event.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;test_state_machine.c&quot; tooltip=&quot;Temperature Sensor/test/test_state_machine.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/test/test_state_machine.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;state_machine.h&quot; tooltip=&quot;Temperature Sensor/Src/state_machine.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/state_machine.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;test_hardware_interface.c&quot; tooltip=&quot;Temperature Sensor/test/test_hardware_interface.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/test/test_hardware_interface.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f1xx_hal_tim.h&quot; tooltip=&quot;Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f1xx_hal_tim.c&quot; tooltip=&quot;Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f103xb.h&quot; tooltip=&quot;Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;hardware_interface.h&quot; tooltip=&quot;Temperature Sensor/Src/hardware_interface.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/hardware_interface.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;Temperature Sensor/Src/main.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;state_machine.c&quot; tooltip=&quot;Temperature Sensor/Src/state_machine.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/state_machine.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.asm.AsmEditor&quot; name=&quot;startup_stm32f103xb.s&quot; tooltip=&quot;Temperature Sensor/startup/startup_stm32f103xb.s&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/startup/startup_stm32f103xb.s&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f1xx_hal_uart.c&quot; tooltip=&quot;Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;function.c&quot; tooltip=&quot;Temperature Sensor/Src/function.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/function.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;uart.c&quot; tooltip=&quot;Temperature Sensor/Src/uart.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/uart.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;callback.c&quot; tooltip=&quot;Temperature Sensor/Src/callback.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/callback.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;event.h&quot; tooltip=&quot;Temperature Sensor/Src/event.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/event.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;test_state_machine.c&quot; tooltip=&quot;Temperature Sensor/test/test_state_machine.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/test/test_state_machine.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;state_machine.h&quot; tooltip=&quot;Temperature Sensor/Src/state_machine.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/state_machine.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;test_hardware_interface.c&quot; tooltip=&quot;Temperature Sensor/test/test_hardware_interface.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/test/test_hardware_interface.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f1xx_hal_tim.h&quot; tooltip=&quot;Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f1xx_hal_tim.c&quot; tooltip=&quot;Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f103xb.h&quot; tooltip=&quot;Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;hardware_interface.h&quot; tooltip=&quot;Temperature Sensor/Src/hardware_interface.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Temperature Sensor/Src/hardware_interface.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_adrq0YJiEeer0p9_YntAxw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_adrq0oJiEeer0p9_YntAxw" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -13,7 +13,7 @@
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_adrq0oJiEeer0p9_YntAxw" selectedElement="_adrq04JiEeer0p9_YntAxw" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_adrq04JiEeer0p9_YntAxw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_adrq64JiEeer0p9_YntAxw">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_adrq04JiEeer0p9_YntAxw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_adrq1IJiEeer0p9_YntAxw">
         <children xsi:type="advanced:Perspective" xmi:id="_adrq1IJiEeer0p9_YntAxw" elementId="org.eclipse.cdt.ui.CPerspective" selectedElement="_adrq1YJiEeer0p9_YntAxw" label="C/C++" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/view16/c_pers.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
           <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
@@ -72,7 +72,7 @@
           <tags>persp.viewSC:org.eclipse.mylyn.tasks.ui.views.tasks</tags>
           <tags>persp.newWizSC:org.eclipse.mylyn.tasks.ui.wizards.new.repository.task</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.debugActionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_adrq1YJiEeer0p9_YntAxw" selectedElement="_adrq1oJiEeer0p9_YntAxw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_adrq1YJiEeer0p9_YntAxw" selectedElement="_adrq24JiEeer0p9_YntAxw" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_adrq1oJiEeer0p9_YntAxw" elementId="topLeft" containerData="1317" selectedElement="_adrq14JiEeer0p9_YntAxw">
               <children xsi:type="advanced:Placeholder" xmi:id="_adrq14JiEeer0p9_YntAxw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_adsSd4JiEeer0p9_YntAxw"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_adrq2IJiEeer0p9_YntAxw" elementId="org.eclipse.cdt.ui.CView" toBeRendered="false" ref="_adsSlIJiEeer0p9_YntAxw"/>
@@ -80,7 +80,7 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_adrq2oJiEeer0p9_YntAxw" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_adsSloJiEeer0p9_YntAxw"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_adrq24JiEeer0p9_YntAxw" containerData="8683" selectedElement="_adrq3IJiEeer0p9_YntAxw" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_adrq3IJiEeer0p9_YntAxw" containerData="5000" selectedElement="_adrq3YJiEeer0p9_YntAxw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_adrq3IJiEeer0p9_YntAxw" containerData="5000" selectedElement="_adrq3oJiEeer0p9_YntAxw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_adrq3YJiEeer0p9_YntAxw" elementId="org.eclipse.ui.editorss" containerData="7890" ref="_adsSU4JiEeer0p9_YntAxw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_adrq3oJiEeer0p9_YntAxw" elementId="PartStack@3bad0efd" containerData="2110" selectedElement="_adrq4IJiEeer0p9_YntAxw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_adrq34JiEeer0p9_YntAxw" elementId="org.eclipse.ui.views.ProblemView" ref="_adsSl4JiEeer0p9_YntAxw"/>
@@ -143,12 +143,11 @@
           <tags>persp.showIn:org.eclipse.egit.ui.RepositoriesView</tags>
           <tags>persp.perspSC:org.eclipse.wst.xml.ui.perspective</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_adrq7IJiEeer0p9_YntAxw" selectedElement="_adrq7YJiEeer0p9_YntAxw">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_adrq7YJiEeer0p9_YntAxw" containerData="9000" selectedElement="_adrq_YJiEeer0p9_YntAxw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_adrq7YJiEeer0p9_YntAxw" containerData="9000" selectedElement="_adrq7oJiEeer0p9_YntAxw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_adrq7oJiEeer0p9_YntAxw" containerData="4144" selectedElement="_adrq74JiEeer0p9_YntAxw" horizontal="true">
                 <children xsi:type="basic:PartSashContainer" xmi:id="_adrq74JiEeer0p9_YntAxw" containerData="3522" selectedElement="_adrq8IJiEeer0p9_YntAxw" horizontal="true">
                   <children xsi:type="basic:PartStack" xmi:id="_adrq8IJiEeer0p9_YntAxw" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="5000" selectedElement="_adrq8YJiEeer0p9_YntAxw">
                     <tags>org.eclipse.e4.primaryNavigationStack</tags>
-                    <tags>active</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_adrq8YJiEeer0p9_YntAxw" elementId="org.eclipse.debug.ui.DebugView" ref="_adsTP4JiEeer0p9_YntAxw"/>
                     <children xsi:type="advanced:Placeholder" xmi:id="_adrq8oJiEeer0p9_YntAxw" elementId="org.eclipse.ui.navigator.ProjectExplorer" toBeRendered="false" ref="_adsSd4JiEeer0p9_YntAxw"/>
                   </children>
@@ -228,11 +227,14 @@
       <children xsi:type="basic:PartStack" xmi:id="_adsSVIJiEeer0p9_YntAxw" elementId="PartStack@766a49c7" selectedElement="_adsSVYJiEeer0p9_YntAxw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_adsSVYJiEeer0p9_YntAxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;Temperature Sensor/Src/main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3909&quot; selectionTopPixel=&quot;930&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;Temperature Sensor/Src/main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3900&quot; selectionTopPixel=&quot;870&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_adsSVoJiEeer0p9_YntAxw" elementId="#CEditorContext">
             <tags>menuContribution:popup</tags>
             <tags>popup:#CEditorContext</tags>
@@ -251,7 +253,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_adsSWYJiEeer0p9_YntAxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="state_machine.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;state_machine.c&quot; partName=&quot;state_machine.c&quot; title=&quot;state_machine.c&quot; tooltip=&quot;Temperature Sensor/Src/state_machine.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/state_machine.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2481&quot; selectionTopPixel=&quot;1305&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;state_machine.c&quot; partName=&quot;state_machine.c&quot; title=&quot;state_machine.c&quot; tooltip=&quot;Temperature Sensor/Src/state_machine.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/state_machine.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2481&quot; selectionTopPixel=&quot;60&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
@@ -306,56 +308,6 @@
         </children>
         <children xsi:type="basic:Part" xmi:id="_1JK_kIJuEeekXbhwYj2_Gg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="callback.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;callback.c&quot; partName=&quot;callback.c&quot; title=&quot;callback.c&quot; tooltip=&quot;Temperature Sensor/Src/callback.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/callback.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;673&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_adsSZ4JiEeer0p9_YntAxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="event.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;event.h&quot; partName=&quot;event.h&quot; title=&quot;event.h&quot; tooltip=&quot;Temperature Sensor/Src/event.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/event.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;116&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_adsSaIJiEeer0p9_YntAxw" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_adsSaYJiEeer0p9_YntAxw" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_adsSaoJiEeer0p9_YntAxw" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_adsSa4JiEeer0p9_YntAxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="function.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;function.c&quot; partName=&quot;function.c&quot; title=&quot;function.c&quot; tooltip=&quot;Temperature Sensor/Src/function.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/function.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2967&quot; selectionTopPixel=&quot;1391&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_adsSbIJiEeer0p9_YntAxw" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_adsSbYJiEeer0p9_YntAxw" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_adsSboJiEeer0p9_YntAxw" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_5vem4IJvEeekXbhwYj2_Gg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="uart.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;uart.c&quot; partName=&quot;uart.c&quot; title=&quot;uart.c&quot; tooltip=&quot;Temperature Sensor/Src/uart.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Temperature Sensor/Src/uart.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;431&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
@@ -708,8 +660,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Debug</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_adsTQIJiEeer0p9_YntAxw" elementId="org.eclipse.debug.ui.DebugView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -746,7 +696,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.debug.ui.DebugView</tags>
       </menus>
-      <toolbar xmi:id="_adsTUYJiEeer0p9_YntAxw" elementId="org.eclipse.debug.ui.DebugView"/>
+      <toolbar xmi:id="_adsTUYJiEeer0p9_YntAxw" elementId="org.eclipse.debug.ui.DebugView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_adsTaYJiEeer0p9_YntAxw" elementId="org.eclipse.debug.ui.VariableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Variables" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/variable_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.debug.internal.ui.views.variables.VariablesView"/>
@@ -1028,13 +978,13 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ads5gYJiEeer0p9_YntAxw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_1h6YQIKFEee2OJpv3PNH9A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_adv-pYJiEeer0p9_YntAxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZCI1cIzMEeeNK5nkLPc2SQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_adv-pYJiEeer0p9_YntAxw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ads5kYJiEeer0p9_YntAxw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_ads5koJiEeer0p9_YntAxw" elementId="additions" toBeRendered="false"/>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_ads51YJiEeer0p9_YntAxw" elementId="org.eclipse.cdt.ui.CElementCreationActionSet" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_ads51YJiEeer0p9_YntAxw" elementId="org.eclipse.cdt.ui.CElementCreationActionSet">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ads524JiEeer0p9_YntAxw" elementId="org.eclipse.debug.ui.launchActionSet">
@@ -1052,7 +1002,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ads58IJiEeer0p9_YntAxw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_1iHMkIKFEee2OJpv3PNH9A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_adv-VYJiEeer0p9_YntAxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZCPjIIzMEeeNK5nkLPc2SQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_adv-VYJiEeer0p9_YntAxw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ads5_IJiEeer0p9_YntAxw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
