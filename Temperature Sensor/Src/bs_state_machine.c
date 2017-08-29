@@ -15,13 +15,13 @@
 
 BitSearchInfo bsInfo = {COMMAND_STATE};
 uint8_t responsePulse[2] = {0};
+uint8_t bitSelect=0;
 
 int bitSearchSM(Event evt){
   switch(bsInfo.bsState){
     case COMMAND_STATE:
       switch(evt){
         case START_EVT:
-          // owReceive(responsePulse, sizeof(responsePulse));
           searchROM();
           bsInfo.bsState = BIT_SEARCH_STATE;
           return 1;
@@ -41,26 +41,35 @@ int bitSearchSM(Event evt){
         default:
           logSystemError("Received an unexpected event in bitSearchSM::BIT_SEARCH_STATE");
           bsInfo.bsState = COMMAND_STATE;
+          return 1;
       }
       break;
     case BIT_SELECT_STATE:
       switch(evt){
         case UART_RX_CPL_EVT:
           if(responsePulse[0] == 0xf8 && responsePulse[1] == 0xf8){
-            owTransmit(BYTE0, _1Byte);
+            bitSelect = BYTE0;
+            owTransmit(&bitSelect, _1Byte);
+            bsInfo.bsState = BIT_SEARCH_STATE;
           }
           else if(responsePulse[0] == 0xf8 && responsePulse[1] == 0xff){
-            owTransmit(BYTE0, _1Byte);
+            bitSelect = BYTE0;
+            owTransmit(&bitSelect, _1Byte);
+            bsInfo.bsState = BIT_SEARCH_STATE;
           }
           else if(responsePulse[0] == 0xff && responsePulse[1] == 0xf8){
-            owTransmit(BYTE1, _1Byte);
+            bitSelect = BYTE1;
+            owTransmit(&bitSelect, _1Byte);
+            bsInfo.bsState = BIT_SEARCH_STATE;
           }
           else{
             logSystemError("No device was found!");
+            bsInfo.bsState = COMMAND_STATE;            
           }
           return 1;
         default:
           logSystemError("Received an unexpected event in bitSearchSM::BIT_SELECT_STATE");
+          bsInfo.bsState = COMMAND_STATE;            
           return 1;
       }
       break;
